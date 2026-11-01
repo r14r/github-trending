@@ -39,6 +39,33 @@ CSV_FIELDS = [
     "link",
 ]
 
+STATUS_COLUMN_WIDTH = 48
+
+
+class ProgressStep:
+    """Print a live progress label and complete it with an aligned status.
+
+    Detailed mode uses separate lines so third-party log messages cannot
+    interrupt an unfinished status line.
+    """
+
+    def __init__(self, label: str, *, details: bool = False) -> None:
+        self.label = label
+        self.details = details
+        self.status = "OK"
+
+    def __enter__(self):
+        if self.details:
+            print(self.label, flush=True)
+        else:
+            print(f"{self.label:<{STATUS_COLUMN_WIDTH}}", end="", flush=True)
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback) -> None:
+        status = "FAILED" if exc_type is not None else self.status
+        prefix = "      " if self.details else ""
+        print(f"{prefix}{status}", flush=True)
+
 
 # Keep redirected output streams alive until interpreter shutdown.
 #
@@ -639,12 +666,10 @@ def show_stats(
 
 async def scrape(
     output_file: Path,
+    *,
+    details: bool = False,
 ) -> None:
-    scrape_date = (
-        date.today().isoformat()
-    )
-
-    print(f"GitHub Trending | {scrape_date}", flush=True)
+    scrape_date = date.today().isoformat()
 
     repositories: list[
         dict[str, str]
@@ -658,11 +683,10 @@ async def scrape(
         # Start Chromium through nodriver
         # ------------------------------------------------------------------
 
-        print("[1/3] Starting browser...", flush=True)
-        browser = await uc.start(
-            headless=True,
-        )
-        print("      OK", flush=True)
+        with ProgressStep("[1/3] Starting browser...", details=details):
+            browser = await uc.start(
+                headless=True,
+            )
 
         # ------------------------------------------------------------------
         # Crawlee
@@ -816,38 +840,38 @@ async def scrape(
         # Run crawler
         # ------------------------------------------------------------------
 
-        print("[2/3] Fetching trending repositories...", flush=True)
-        await crawler.run(
-            [URL]
-        )
+        with ProgressStep(
+            "[2/3] Fetching trending repositories...", details=details,
+        ) as step:
+            await crawler.run([URL])
 
-        # ------------------------------------------------------------------
-        # Safety
-        # ------------------------------------------------------------------
-
-        if not repositories:
-            raise RuntimeError(
-                "No repositories were extracted. "
-                "CSV was not modified."
-            )
-
-        print(f"      OK - {len(repositories)} repositories found", flush=True)
+            # Never overwrite a previous snapshot after an empty scrape.
+            if not repositories:
+                raise RuntimeError(
+                    "No repositories were extracted. "
+                    "CSV was not modified."
+                )
+            step.status = f"OK ({len(repositories)} repositories found)"
 
         # ------------------------------------------------------------------
         # Update CSV
         # ------------------------------------------------------------------
 
-        print("[3/3] Updating CSV snapshot...", flush=True)
-        replaced_rows, total_rows = update_csv(
-            output_file,
-            repositories,
-            scrape_date,
-        )
-        print("      OK", flush=True)
+        with ProgressStep(
+            "[3/3] Updating CSV snapshot...", details=details,
+        ):
+            replaced_rows, total_rows = update_csv(
+                output_file,
+                repositories,
+                scrape_date,
+            )
+
+        print(flush=True)
         print(
-            f"Result: {len(repositories)} saved; "
-            f"{replaced_rows} previous rows replaced; "
-            f"{total_rows} total records in {output_file}",
+            f"{'Result:':<{STATUS_COLUMN_WIDTH}}"
+            f"{len(repositories)} saved | "
+            f"{replaced_rows} replaced | "
+            f"{total_rows} total records",
             flush=True,
         )
 
@@ -923,7 +947,8 @@ def main() -> int:
 
         uc.loop().run_until_complete(
             scrape(
-                args.output
+                args.output,
+                details=args.details,
             )
         )
 
