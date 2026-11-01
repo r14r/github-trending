@@ -1,25 +1,20 @@
 #!/usr/bin/env python3
 
 import argparse
+import asyncio
 import csv
 import logging
 import os
 import sys
+
+from urllib.request import Request, urlopen
 
 from collections import Counter
 from datetime import date, datetime
 from pathlib import Path
 from urllib.parse import urljoin
 
-import nodriver as uc
-
 from parsel import Selector
-
-from crawlee import ConcurrencySettings
-from crawlee.crawlers import (
-    BasicCrawler,
-    BasicCrawlingContext,
-)
 
 
 # ============================================================================
@@ -38,6 +33,33 @@ CSV_FIELDS = [
     "desc",
     "link",
 ]
+
+STATUS_COLUMN_WIDTH = 46
+
+
+class ProgressStep:
+    """Print a live progress label and complete it with an aligned status.
+
+    Detailed mode uses separate lines so third-party log messages cannot
+    interrupt an unfinished status line.
+    """
+
+    def __init__(self, label: str, *, details: bool = False) -> None:
+        self.label = label
+        self.details = details
+        self.status = "OK"
+
+    def __enter__(self):
+        if self.details:
+            print(self.label, flush=True)
+        else:
+            print(f"{self.label:<{STATUS_COLUMN_WIDTH}}", end="", flush=True)
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback) -> None:
+        status = "FAILED" if exc_type is not None else self.status
+        prefix = "      " if self.details else ""
+        print(f"{prefix}{status}", flush=True)
 
 
 # Keep redirected output streams alive until interpreter shutdown.
@@ -58,6 +80,18 @@ def parse_args() -> argparse.Namespace:
             "Scrape GitHub Trending repositories and maintain "
             "a historical CSV."
         )
+    )
+
+    parser.add_argument(
+        "--details",
+        action="store_true",
+        help="Show detailed scraper and browser diagnostic logs.",
+    )
+
+    parser.add_argument(
+        "--browser",
+        action="store_true",
+        help="Force Chrome/nodriver instead of the default HTTPS fetch.",
     )
 
     parser.add_argument(
@@ -124,7 +158,10 @@ def configure_output(
     Configure process-wide stdout, stderr and logging.
 
     Normal:
-        terminal
+        terminal with concise progress and errors
+
+    --details:
+        terminal with library diagnostics
 
     --silent:
         /dev/null
@@ -179,7 +216,7 @@ def configure_output(
     # ------------------------------------------------------------------
 
     logging.basicConfig(
-        level=logging.INFO,
+        level=logging.INFO if args.details else logging.ERROR,
         format=(
             "%(asctime)s "
             "[%(name)s] "
@@ -237,7 +274,7 @@ def update_csv(
     filename: Path,
     repositories: list[dict[str, str]],
     scrape_date: str,
-) -> None:
+) -> tuple[int, int]:
     """
     Upsert one complete snapshot.
 
@@ -357,31 +394,7 @@ def update_csv(
             rows
         )
 
-    # ------------------------------------------------------------------
-    # Summary
-    # ------------------------------------------------------------------
-
-    if replaced_rows:
-        print(
-            f"Updated snapshot {scrape_date} "
-            f"({replaced_rows} previous rows replaced)"
-        )
-    else:
-        print(
-            f"Added new snapshot for {scrape_date}"
-        )
-
-    print(
-        f"Saved {len(current_rows)} repositories"
-    )
-
-    print(
-        f"CSV now contains {len(rows)} records"
-    )
-
-    print(
-        f"CSV file: {filename}"
-    )
+    return replaced_rows, len(rows)
 
 
 # ============================================================================
@@ -648,230 +661,198 @@ def show_stats(
 
 
 # ============================================================================
+# HTTP and optional browser fetching
+# ============================================================================
+
+
+def download_html(url: str) -> str:
+    """GitHub Trending is server-rendered; Chrome is normally unnecessary."""
+    request = Request(
+        url,
+        headers={
+            "User-Agent": "Mozilla/5.0 (compatible; github-trending/0.1)",
+            "Accept": "text/html,application/xhtml+xml",
+            "Accept-Language": "en-US,en;q=0.8",
+        },
+    )
+    with urlopen(request, timeout=20) as response:
+        html = response.read().decode("utf-8", errors="replace")
+    if not html.strip():
+        raise RuntimeError("GitHub Trending returned an empty response")
+    return html
+
+
+async def fetch_html_http(url: str = URL, attempts: int = 3) -> str:
+    """Retry transient HTTPS failures before starting a browser."""
+    for attempt in range(1, attempts + 1):
+        try:
+            return await asyncio.to_thread(download_html, url)
+        except Exception as exc:
+            logging.info("HTTPS attempt %d/%d failed: %s", attempt, attempts, exc)
+            if attempt == attempts:
+                raise
+            await asyncio.sleep(attempt)
+    raise RuntimeError("HTTPS fetch failed")
+
+
+async def fetch_html_browser(url: str = URL, attempts: int = 2) -> str:
+    """Browser fallback: retry an intermittent DevTools connection failure."""
+    try:
+        import nodriver as uc
+    except ImportError as exc:
+        raise RuntimeError(
+            "Browser fallback requires nodriver (run: just install)"
+        ) from exc
+
+    for attempt in range(1, attempts + 1):
+        browser = None
+        try:
+            options = {"headless": True}
+            # Only disable Chrome's sandbox if running as root.
+            # Normal macOS cron runs must not require this option.
+            if hasattr(os, "geteuid") and os.geteuid() == 0:
+                options["no_sandbox"] = True
+
+            browser = await uc.start(**options)
+            page = await browser.get(url)
+            found = await page.select("article.Box-row", timeout=15)
+            if found is None:
+                raise RuntimeError("No repository cards appeared in Chrome")
+            return await page.get_content()
+        except Exception as exc:
+            logging.info(
+                "Browser attempt %d/%d failed: %s", attempt, attempts, exc,
+            )
+            if attempt == attempts:
+                raise RuntimeError(
+                    f"Chrome could not fetch Trending after {attempts} attempts: {exc}"
+                ) from exc
+            await asyncio.sleep(attempt)
+        finally:
+            if browser is not None:
+                try:
+                    browser.stop()
+                except Exception:
+                    logging.debug("Could not stop Chrome cleanly", exc_info=True)
+
+    raise RuntimeError("Browser fetch failed")
+
+
+# ============================================================================
+# Repository extraction
+# ============================================================================
+
+
+def parse_repositories(html: str) -> list[dict[str, str]]:
+    """Extract all cards from one fully received HTML document."""
+    articles = Selector(text=html).css("article.Box-row")
+    if not articles:
+        raise RuntimeError("No GitHub Trending repository cards found")
+
+    repositories = []
+    seen = set()
+
+    for article in articles:
+        href = article.css("h2 a::attr(href)").get()
+        if not href:
+            raise RuntimeError("Trending card without a repository link")
+
+        path = href.strip().split("?", 1)[0].strip("/")
+        if len(path.split("/")) != 2:
+            raise RuntimeError(f"Invalid repository path: {href!r}")
+        link = urljoin("https://github.com/", path)
+        if link in seen:
+            raise RuntimeError(f"Duplicate repository card: {link}")
+        seen.add(link)
+
+        parts = article.xpath(
+            './/p[contains(concat(" ", normalize-space(@class), " "), '
+            '" col-9 ")]//text()'
+        ).getall()
+        description = " ".join(text.strip() for text in parts if text.strip())
+
+        repositories.append({"title": path, "desc": description, "link": link})
+
+    return repositories
+
+
+def show_repositories(repositories: list[dict[str, str]]) -> None:
+    print("\nRepositories:", flush=True)
+    width = max(len(repo["title"]) for repo in repositories)
+    for index, repo in enumerate(repositories, 1):
+        print(
+            f"  {index:>2}. {repo['title']:<{width}}  {repo['link']}",
+            flush=True,
+        )
+
+
+# ============================================================================
 # Scraper
 # ============================================================================
 
 
 async def scrape(
     output_file: Path,
+    *,
+    details: bool = False,
+    browser: bool = False,
 ) -> None:
-    scrape_date = (
-        date.today().isoformat()
-    )
+    scrape_date = date.today().isoformat()
 
-    print()
-    print(
-        f"Scraping GitHub Trending "
-        f"for {scrape_date}"
-    )
-    print()
+    print(f"GitHub Trending | {scrape_date}", flush=True)
+    print(f"Source: {URL}\n", flush=True)
 
-    repositories: list[
-        dict[str, str]
-    ] = []
+    with ProgressStep("[1/3] Fetching trending page...", details=details) as step:
+        if browser:
+            html = await fetch_html_browser(URL)
+            source = "Chrome"
+        else:
+            try:
+                html = await fetch_html_http(URL)
+                source = "HTTPS"
+            except Exception as exc:
+                logging.info("HTTPS fetch failed, using Chrome: %s", exc)
+                try:
+                    html = await fetch_html_browser(URL)
+                except Exception as browser_exc:
+                    raise RuntimeError(
+                        f"HTTPS fetch failed: {exc}; "
+                        f"Chrome fallback failed: {browser_exc}"
+                    ) from browser_exc
+                source = "Chrome fallback"
+        step.status = f"OK ({source})"
 
-    browser = None
+    with ProgressStep("[2/3] Parsing repositories...", details=details) as step:
+        try:
+            repositories = parse_repositories(html)
+        except Exception as exc:
+            if source != "HTTPS":
+                raise
+            logging.info("HTTPS returned unusable HTML; using Chrome: %s", exc)
+            html = await fetch_html_browser(URL)
+            repositories = parse_repositories(html)
+            source = "Chrome fallback"
+        noun = "repository" if len(repositories) == 1 else "repositories"
+        step.status = f"OK ({len(repositories)} {noun} found, {source})"
 
-    try:
+    show_repositories(repositories)
 
-        # ------------------------------------------------------------------
-        # Start Chromium through nodriver
-        # ------------------------------------------------------------------
-
-        browser = await uc.start(
-            headless=True,
-        )
-
-        # ------------------------------------------------------------------
-        # Crawlee
-        # ------------------------------------------------------------------
-
-        crawler = BasicCrawler(
-            max_requests_per_crawl=1,
-            max_request_retries=3,
-            concurrency_settings=ConcurrencySettings(
-                desired_concurrency=1,
-                max_concurrency=1,
-            ),
-        )
-
-        # ------------------------------------------------------------------
-        # Request handler
-        # ------------------------------------------------------------------
-
-        @crawler.router.default_handler
-        async def handler(
-            context: BasicCrawlingContext,
-        ) -> None:
-
-            url = str(
-                context.request.url
-            )
-
-            context.log.info(
-                f"Opening {url}"
-            )
-
-            # --------------------------------------------------------------
-            # Render page with nodriver
-            # --------------------------------------------------------------
-
-            page = await browser.get(
-                url
-            )
-
-            # --------------------------------------------------------------
-            # Wait for repository cards
-            # --------------------------------------------------------------
-
-            repository_element = (
-                await page.select(
-                    "article.Box-row",
-                    timeout=15,
-                )
-            )
-
-            if repository_element is None:
-                raise RuntimeError(
-                    "No repository elements found "
-                    "on GitHub Trending."
-                )
-
-            # --------------------------------------------------------------
-            # Rendered HTML
-            # --------------------------------------------------------------
-
-            html = (
-                await page.get_content()
-            )
-
-            # --------------------------------------------------------------
-            # Parsel
-            # --------------------------------------------------------------
-
-            selector = Selector(
-                text=html
-            )
-
-            articles = selector.css(
-                "article.Box-row"
-            )
-
-            context.log.info(
-                f"Found {len(articles)} "
-                "repository elements"
-            )
-
-            # --------------------------------------------------------------
-            # Extract repositories
-            # --------------------------------------------------------------
-
-            for article in articles:
-
-                href = article.css(
-                    "h2 a::attr(href)"
-                ).get()
-
-                if not href:
-                    continue
-
-                href = href.strip()
-
-                title = (
-                    href.strip("/")
-                )
-
-                # ----------------------------------------------------------
-                # Description
-                # ----------------------------------------------------------
-
-                description_parts = (
-                    article.xpath(
-                        './/p['
-                        'contains(@class, "col-9")'
-                        ']//text()'
-                    ).getall()
-                )
-
-                description = " ".join(
-                    text.strip()
-                    for text
-                    in description_parts
-                    if text.strip()
-                )
-
-                # ----------------------------------------------------------
-                # Absolute link
-                # ----------------------------------------------------------
-
-                link = urljoin(
-                    "https://github.com",
-                    href,
-                )
-
-                repository = {
-                    "title": title,
-                    "desc": description,
-                    "link": link,
-                }
-
-                repositories.append(
-                    repository
-                )
-
-                # ----------------------------------------------------------
-                # Crawlee dataset
-                # ----------------------------------------------------------
-
-                await context.push_data(
-                    {
-                        "date": scrape_date,
-                        **repository,
-                    }
-                )
-
-        # ------------------------------------------------------------------
-        # Run crawler
-        # ------------------------------------------------------------------
-
-        await crawler.run(
-            [URL]
-        )
-
-        print()
-
-        print(
-            f"Found {len(repositories)} repositories"
-        )
-
-        # ------------------------------------------------------------------
-        # Safety
-        # ------------------------------------------------------------------
-
-        if not repositories:
-            raise RuntimeError(
-                "No repositories were extracted. "
-                "CSV was not modified."
-            )
-
-        # ------------------------------------------------------------------
-        # Update CSV
-        # ------------------------------------------------------------------
-
-        update_csv(
+    with ProgressStep("[3/3] Updating CSV snapshot...", details=details):
+        replaced_rows, total_rows = update_csv(
             output_file,
             repositories,
             scrape_date,
         )
 
-    finally:
-
-        # ------------------------------------------------------------------
-        # Stop browser
-        # ------------------------------------------------------------------
-
-        if browser is not None:
-            browser.stop()
+    print(flush=True)
+    print(
+        f"{'Result:':<{STATUS_COLUMN_WIDTH}}"
+        f"{len(repositories)} saved | "
+        f"{replaced_rows} replaced | "
+        f"{total_rows} total records",
+        flush=True,
+    )
+    print(f"CSV file: {output_file}", flush=True)
 
 
 # ============================================================================
@@ -934,9 +915,11 @@ def main() -> int:
         # Scrape
         # ------------------------------------------------------------------
 
-        uc.loop().run_until_complete(
+        asyncio.run(
             scrape(
-                args.output
+                args.output,
+                details=args.details,
+                browser=args.browser,
             )
         )
 
@@ -945,10 +928,11 @@ def main() -> int:
     except KeyboardInterrupt:
         return 130
 
-    except Exception:
-        logging.exception(
-            "GitHub Trending scraper failed"
-        )
+    except Exception as exc:
+        if args.details:
+            logging.exception("GitHub Trending scraper failed")
+        else:
+            print(f"ERROR: {exc}", file=sys.stderr)
 
         return 1
 

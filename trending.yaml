@@ -1,0 +1,157 @@
+'2026-10-31':
+  total_matches: 391921
+  query: created:>=2026-10-31 sort:stars-desc
+  repositories:
+  - nameWithOwner: deepseek-ai/dsh-superagent-prototype
+    description: Towards a More Autonomous Agent System
+    stargazerCount: 4895
+    primaryLanguage:
+      name: TypeScript
+    url: https://github.com/deepseek-ai/dsh-superagent-prototype
+    createdAt: '2026-10-31T09:32:46Z'
+  - nameWithOwner: joeblau/subvox
+    description: null
+    stargazerCount: 450
+    primaryLanguage:
+      name: Swift
+    url: https://github.com/joeblau/subvox
+    createdAt: '2026-10-31T01:48:19Z'
+  - nameWithOwner: arpanjot-coding/AVault
+    description: AVault - Call Recorder (No Root Required) | Privacy-first, hardware-encrypted
+      audio vault for Android 12-16+. Rootless call recording via Shizuku with AES-256-GCM,
+      biometrics & auto-cleanup.
+    stargazerCount: 359
+    primaryLanguage:
+      name: Kotlin
+    url: https://github.com/arpanjot-coding/AVault
+    createdAt: '2026-10-31T19:21:27Z'
+  - nameWithOwner: storytold/craft-anything
+    description: 'Craft Anything: understand how any software works, and craft your
+      own.'
+    stargazerCount: 337
+    primaryLanguage:
+      name: Rust
+    url: https://github.com/storytold/craft-anything
+    createdAt: '2026-10-31T14:50:00Z'
+  - nameWithOwner: darkareaminaret/MetaTrader-5-Bot
+    description: 'Metatrader 5 Bot 2026: Full working installer with automated trading
+      scripts ready to run.'
+    stargazerCount: 313
+    primaryLanguage: null
+    url: https://github.com/darkareaminaret/MetaTrader-5-Bot
+    createdAt: '2026-10-31T07:24:32Z'
+  - nameWithOwner: mythicassemblyladle/RX-11-Audio-Editor
+    description: Rx 11 Audio Editor 2026 complete standalone installation setup. Ready-to-run
+      desktop edition with all features unlocked.
+    stargazerCount: 310
+    primaryLanguage: null
+    url: https://github.com/mythicassemblyladle/RX-11-Audio-Editor
+    createdAt: '2026-10-31T07:26:29Z'
+  - nameWithOwner: FencerEngage/courier-dota2
+    description: 'Published: 2026-10-31'
+    stargazerCount: 305
+    primaryLanguage: null
+    url: https://github.com/FencerEngage/courier-dota2
+    createdAt: '2026-10-31T17:20:16Z'
+  - nameWithOwner: Pointoocupola/Hwid-Spoofer
+    description: Complete standalone setup for Hwid Spoofer Free, pre-activated and
+      ready to run.
+    stargazerCount: 304
+    primaryLanguage: null
+    url: https://github.com/Pointoocupola/Hwid-Spoofer
+    createdAt: '2026-10-31T07:23:36Z'
+  - nameWithOwner: PeasantMonitor/IOBIT-Driver-Booster
+    description: Pre-activated desktop edition of Iobit Driver Booster 2026. Complete
+      standalone setup, ready to run with all features enabled.
+    stargazerCount: 302
+    primaryLanguage: null
+    url: https://github.com/PeasantMonitor/IOBIT-Driver-Booster
+    createdAt: '2026-10-31T07:23:55Z'
+  - nameWithOwner: archivethrushhook/Adobe-After-Effects
+    description: Complete standalone setup for VFX Motion Studio 2026. Pre-activated
+      desktop version ready to run.
+    stargazerCount: 301
+    primaryLanguage: null
+    url: https://github.com/archivethrushhook/Adobe-After-Effects
+    createdAt: '2026-10-31T07:19:41Z'
+'2026-10-30':
+  total_matches: 727920
+  query: created:>=2026-10-30 sort:stars-desc
+  repositories:
+  - nameWithOwner: deepseek-ai/dsh-superagent-prototype
+    description: Towards a More Autonomous Agent System
+    stargazerCount: 4896
+    primaryLanguage:
+      name: TypeScript
+    url: https://github.com/deepseek-ai/dsh-superagent-prototype
+    createdAt: '2026-10-31T09:32:46Z'
+  - nameWithOwner: patch-gg/pixelfx
+    description: 244 pixel art effects, every one a small piece of code. Plus a Claude
+      Code skill to make your own.
+    stargazerCount: 1918
+    primaryLanguage:
+      name: JavaScript
+    url: https://github.com/patch-gg/pixelfx
+    createdAt: '2026-10-30T06:43:25Z'
+  - nameWithOwner: kevinraymond/florilegium
+    description: Procedurally generated Delft-blue floral page margins for LuaLaTeX,
+      drawn in Lua
+    stargazerCount: 1204
+    primaryLanguage:
+      name: Lua
+    url: https://github.com/kevinraymond/florilegium
+    createdAt: '2026-10-30T07:49:05Z'
+  - nameWithOwner: Arjun-Ingole/hop
+    description: Install Linux next to Windows without a USB stick
+    stargazerCount: 902
+    primaryLanguage:
+      name: PowerShell
+    url: https://github.com/Arjun-Ingole/hop
+    createdAt: '2026-10-30T19:40:45Z'
+  - nameWithOwner: elvarofficial/teardown
+    description: A Claude Code skill that turns any machine into a 3D simulator you
+      can take apart
+    stargazerCount: 662
+    primaryLanguage:
+      name: JavaScript
+    url: https://github.com/elvarofficial/teardown
+    createdAt: '2026-10-30T09:29:01Z'
+  - nameWithOwner: ramenvr/autopilot
+    description: Play any game
+    stargazerCount: 568
+    primaryLanguage:
+      name: Python
+    url: https://github.com/ramenvr/autopilot
+    createdAt: '2026-10-30T03:47:28Z'
+  - nameWithOwner: boardshogunfluctuate/Capri-AI
+    description: ⚡ Tell your PC what to do. Capri is a cyberpunk AI agent that works
+      with your files, projects and code through Claude Code, Codex or Antigravity.
+      Windows installer, no terminal. Fan-made, not affiliated with CD PROJEKT RED.
+    stargazerCount: 518
+    primaryLanguage: null
+    url: https://github.com/boardshogunfluctuate/Capri-AI
+    createdAt: '2026-10-30T22:03:48Z'
+  - nameWithOwner: joeblau/subvox
+    description: null
+    stargazerCount: 450
+    primaryLanguage:
+      name: Swift
+    url: https://github.com/joeblau/subvox
+    createdAt: '2026-10-31T01:48:19Z'
+  - nameWithOwner: alchaincyf/huashu-bird-sticker
+    description: 花叔开源的全球鸟类贴纸库 · Stickers for all 11,064 living bird species, with
+      names in 43 languages and structured data
+    stargazerCount: 441
+    primaryLanguage: null
+    url: https://github.com/alchaincyf/huashu-bird-sticker
+    createdAt: '2026-10-30T05:19:33Z'
+  - nameWithOwner: N1nEmAn/sapper-v2
+    description: 'Autonomous pentest legion — AI commander + worker swarm + layered
+      fact-intent graph. 3rd Tencent Intelligent Attack-Defense online champion (634
+      teams · 8h unattended · 1B tokens beat 4.5B). The Nüwa Test: give AIs Create/Language/History,
+      let a civilization grow.'
+    stargazerCount: 393
+    primaryLanguage:
+      name: Python
+    url: https://github.com/N1nEmAn/sapper-v2
+    createdAt: '2026-10-30T15:12:35Z'

@@ -29,9 +29,7 @@ venv:
 install: venv
     uv pip install \
         --python {{PYTHON}} \
-        nodriver \
-        parsel \
-        crawlee
+        -r requirements.txt
 
 
 # Install development tools
@@ -54,7 +52,17 @@ setup: install-dev
 
 # Run scraper
 run:
-    {{PYTHON}} {{SCRIPT}}
+    @{{PYTHON}} {{SCRIPT}}
+
+
+# Show browser and crawler diagnostics
+details:
+    @{{PYTHON}} {{SCRIPT}} --details
+
+
+# Force browser mode for troubleshooting HTTPS failures
+browser:
+    @{{PYTHON}} {{SCRIPT}} --browser
 
 
 # Silent run
@@ -177,6 +185,11 @@ check:
     {{PYTHON}} -m py_compile github_trending.py
 
 
+# Run regression tests (no browser or network required)
+test:
+    {{PYTHON}} -m unittest discover -s tests -p "test_*.py"
+
+
 lint:
     .venv/bin/ruff check .
 
@@ -202,14 +215,14 @@ quality: check lint format-check
 
 test-imports:
     {{PYTHON}} -c \
-        "import nodriver, parsel, crawlee; print('All imports OK')"
+        "import nodriver, parsel; print('All imports OK')"
 
 
 versions:
     @{{PYTHON}} --version
     @echo
     @uv pip list --python {{PYTHON}} \
-        | grep -E "nodriver|parsel|crawlee|ruff|pytest"
+        | grep -E "nodriver|parsel|ruff|pytest"
 
 
 # ----------------------------------------------------------------------

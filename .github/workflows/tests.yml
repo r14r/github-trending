@@ -1,0 +1,26 @@
+name: Python tests
+
+on:
+  push:
+    branches: [main, "feat/**"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version-file: .python-version
+      - name: Install parser dependency
+        run: python -m pip install parsel
+      - name: Compile scraper
+        run: python -m py_compile github_trending.py
+      - name: Run regression tests
+        run: python -m unittest discover -s tests -p "test_*.py" -v
