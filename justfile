@@ -57,6 +57,11 @@ run:
     {{PYTHON}} {{SCRIPT}}
 
 
+# Show browser and crawler diagnostics
+details:
+    {{PYTHON}} {{SCRIPT}} --details
+
+
 # Silent run
 silent:
     {{PYTHON}} {{SCRIPT}} --silent
@@ -175,6 +180,11 @@ clean-log:
 
 check:
     {{PYTHON}} -m py_compile github_trending.py
+
+
+# Run regression tests (no browser or network required)
+test:
+    {{PYTHON}} -m unittest discover -s tests -p "test_*.py"
 
 
 lint:
