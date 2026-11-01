@@ -1,0 +1,16 @@
+{
+  "unique_key": "https://github.com/trending",
+  "url": "https://github.com/trending",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    }
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-11-01 08:20:28.215960+00:00"
+}

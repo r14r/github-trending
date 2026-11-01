@@ -1,0 +1,3740 @@
+
+======================================================================
+GitHub Trending scraper started: 2026-09-12T09:17:22
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-09-12
+
+2026-09-12 09:17:22 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_hoeuxg9g
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=62850
+2026-09-12 09:17:23 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-09-12 09:17:23 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-09-12 09:17:23 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-09-12 09:17:23 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-12 09:17:24 [crawlee.crawlers._basic._basic_crawler] INFO Found 16 repository elements
+2026-09-12 09:17:25 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-09-12 09:17:25 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-09-12 09:17:25 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-09-12 09:17:25 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 1.55s │
+│ requests_finished_per_minute  │ 37    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 1.55s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 1.63s │
+└───────────────────────────────┴───────┘
+
+Found 16 repositories
+Updated snapshot 2026-09-12 (16 previous rows replaced)
+Saved 16 repositories
+CSV now contains 16 records
+CSV file: github_trending.csv
+2026-09-12 09:17:25 [nodriver.core.browser] INFO terminated browser with pid 63596 successfully
+2026-09-12 09:17:25 [nodriver.core.browser] INFO terminated browser with pid 63596 successfully
+2026-09-12 09:17:25 [nodriver.core.util] INFO successfully removed temp profile /var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_hoeuxg9g
+
+======================================================================
+GitHub Trending scraper started: 2026-09-12T09:17:47
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-09-12
+
+2026-09-12 09:17:47 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_8xqyqt7w
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=62893
+2026-09-12 09:17:48 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-09-12 09:17:48 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-09-12 09:17:48 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-09-12 09:17:48 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-12 09:17:50 [crawlee.crawlers._basic._basic_crawler] INFO Found 16 repository elements
+2026-09-12 09:17:50 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-09-12 09:17:50 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-09-12 09:17:50 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-09-12 09:17:50 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 1.53s │
+│ requests_finished_per_minute  │ 37    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 1.53s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 1.63s │
+└───────────────────────────────┴───────┘
+
+Found 16 repositories
+Updated snapshot 2026-09-12 (16 previous rows replaced)
+Saved 16 repositories
+CSV now contains 16 records
+CSV file: github_trending.csv
+2026-09-12 09:17:50 [nodriver.core.browser] INFO terminated browser with pid 63704 successfully
+2026-09-12 09:17:50 [nodriver.core.browser] INFO terminated browser with pid 63704 successfully
+2026-09-12 09:17:50 [nodriver.core.util] INFO successfully removed temp profile /var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_8xqyqt7w
+
+======================================================================
+GitHub Trending scraper started: 2026-09-12T09:30:09
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-09-12
+
+2026-09-12 09:30:09 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_dmfrfc14
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=63013
+2026-09-12 09:30:11 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-09-12 09:30:11 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-09-12 09:30:11 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-09-12 09:30:11 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-12 09:30:12 [crawlee.crawlers._basic._basic_crawler] INFO Found 16 repository elements
+2026-09-12 09:30:12 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-09-12 09:30:12 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-09-12 09:30:12 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-09-12 09:30:12 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 1.55s │
+│ requests_finished_per_minute  │ 37    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 1.55s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 1.63s │
+└───────────────────────────────┴───────┘
+
+Found 16 repositories
+Updated snapshot 2026-09-12 (16 previous rows replaced)
+Saved 16 repositories
+CSV now contains 16 records
+CSV file: github_trending.csv
+2026-09-12 09:30:12 [nodriver.core.browser] INFO terminated browser with pid 64337 successfully
+2026-09-12 09:30:12 [nodriver.core.browser] INFO terminated browser with pid 64337 successfully
+2026-09-12 09:30:12 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_dmfrfc14
+
+======================================================================
+GitHub Trending scraper started: 2026-09-13T09:30:05
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-09-13
+
+2026-09-13 09:30:05 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_z2cls7qb
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=57408
+2026-09-13 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-09-13 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-09-13 09:30:07 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-09-13 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-13 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO Found 16 repository elements
+2026-09-13 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-09-13 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-09-13 09:30:09 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-09-13 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 2.60s │
+│ requests_finished_per_minute  │ 23    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 2.60s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 2.64s │
+└───────────────────────────────┴───────┘
+
+Found 16 repositories
+Added new snapshot for 2026-09-13
+Saved 16 repositories
+CSV now contains 32 records
+CSV file: github_trending.csv
+2026-09-13 09:30:09 [nodriver.core.browser] INFO terminated browser with pid 32867 successfully
+2026-09-13 09:30:09 [nodriver.core.browser] INFO terminated browser with pid 32867 successfully
+2026-09-13 09:30:10 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_z2cls7qb
+
+======================================================================
+GitHub Trending scraper started: 2026-09-14T09:30:08
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-09-14
+
+2026-09-14 09:30:08 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_zxs0x896
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=60659
+2026-09-14 09:30:10 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-09-14 09:30:10 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-09-14 09:30:10 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-09-14 09:30:10 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-14 09:30:12 [crawlee.crawlers._basic._basic_crawler] WARNING Retrying request to https://github.com/trending due to: Could not find node with given id [code: -32000]. File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/nodriver/core/connection.py", line 443, in send,     raise exception
+2026-09-14 09:30:12 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-14 09:30:13 [crawlee.crawlers._basic._basic_crawler] INFO Found 19 repository elements
+2026-09-14 09:30:13 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-09-14 09:30:13 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-09-14 09:30:13 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-09-14 09:30:13 [crawlee.crawlers._basic._basic_crawler] INFO Error analysis: total_errors=1 unique_errors=1
+2026-09-14 09:30:13 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬─────────┐
+│ requests_finished             │ 1       │
+│ requests_failed               │ 0       │
+│ retry_histogram               │ [0, 1]  │
+│ request_avg_failed_duration   │ None    │
+│ request_avg_finished_duration │ 966.8ms │
+│ requests_finished_per_minute  │ 19      │
+│ requests_failed_per_minute    │ 0       │
+│ request_total_duration        │ 966.8ms │
+│ requests_total                │ 1       │
+│ crawler_runtime               │ 3.17s   │
+└───────────────────────────────┴─────────┘
+
+Found 19 repositories
+Added new snapshot for 2026-09-14
+Saved 19 repositories
+CSV now contains 51 records
+CSV file: github_trending.csv
+2026-09-14 09:30:13 [nodriver.core.browser] INFO terminated browser with pid 47332 successfully
+2026-09-14 09:30:13 [nodriver.core.browser] INFO terminated browser with pid 47332 successfully
+2026-09-14 09:30:13 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_zxs0x896
+
+======================================================================
+GitHub Trending scraper started: 2026-09-15T09:30:03
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-09-15
+
+2026-09-15 09:30:03 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_wer7o2i2
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=56916
+2026-09-15 09:30:05 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-09-15 09:30:05 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-09-15 09:30:05 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-09-15 09:30:05 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-15 09:30:11 [crawlee.crawlers._basic._basic_crawler] INFO Found 20 repository elements
+2026-09-15 09:30:11 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-09-15 09:30:11 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-09-15 09:30:11 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-09-15 09:30:11 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 5.89s │
+│ requests_finished_per_minute  │ 10    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 5.89s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 5.98s │
+└───────────────────────────────┴───────┘
+
+Found 20 repositories
+Added new snapshot for 2026-09-15
+Saved 20 repositories
+CSV now contains 71 records
+CSV file: github_trending.csv
+2026-09-15 09:30:11 [nodriver.core.browser] INFO terminated browser with pid 98305 successfully
+2026-09-15 09:30:11 [nodriver.core.browser] INFO terminated browser with pid 98305 successfully
+2026-09-15 09:30:11 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_wer7o2i2
+
+======================================================================
+GitHub Trending scraper started: 2026-09-16T09:30:20
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-09-16
+
+2026-09-16 09:30:20 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_2csglioy
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=60905
+2026-09-16 09:30:23 [root] ERROR GitHub Trending scraper failed
+Traceback (most recent call last):
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 937, in main
+    uc.loop().run_until_complete(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        scrape(
+        ^^^^^^^
+            args.output
+            ^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/usr/local/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 726, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 681, in scrape
+    browser = await uc.start(
+              ^^^^^^^^^^^^^^^
+        headless=True,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/nodriver/core/util.py", line 103, in start
+    return await Browser.create(config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/nodriver/core/browser.py", line 95, in create
+    await instance.start()
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/nodriver/core/browser.py", line 382, in start
+    raise Exception(
+    ...<9 lines>...
+    )
+Exception: 
+                ---------------------
+                Failed to connect to browser
+                ---------------------
+                One of the causes could be when you are running as root.
+                In that case you need to pass no_sandbox=True 
+                
+2026-09-16 09:30:23 [nodriver.core.browser] INFO terminated browser with pid 36061 successfully
+2026-09-16 09:30:23 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_2csglioy
+
+======================================================================
+GitHub Trending scraper started: 2026-09-17T09:30:03
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-09-17
+
+2026-09-17 09:30:03 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_9anpn_yg
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=50748
+2026-09-17 09:30:04 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-09-17 09:30:04 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-09-17 09:30:04 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-09-17 09:30:04 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-17 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO Found 21 repository elements
+2026-09-17 09:30:08 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-09-17 09:30:08 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-09-17 09:30:08 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-09-17 09:30:08 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 3.23s │
+│ requests_finished_per_minute  │ 18    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 3.23s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 3.30s │
+└───────────────────────────────┴───────┘
+
+Found 21 repositories
+Added new snapshot for 2026-09-17
+Saved 21 repositories
+CSV now contains 92 records
+CSV file: github_trending.csv
+2026-09-17 09:30:08 [nodriver.core.browser] INFO terminated browser with pid 7829 successfully
+2026-09-17 09:30:08 [nodriver.core.browser] INFO terminated browser with pid 7829 successfully
+2026-09-17 09:30:08 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_9anpn_yg
+
+======================================================================
+GitHub Trending scraper started: 2026-09-18T09:30:04
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-09-18
+
+2026-09-18 09:30:04 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_zezw_mut
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=59750
+2026-09-18 09:30:06 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-09-18 09:30:06 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-09-18 09:30:06 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-09-18 09:30:06 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-18 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO Found 20 repository elements
+2026-09-18 09:30:08 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-09-18 09:30:08 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-09-18 09:30:08 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-09-18 09:30:08 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 1.79s │
+│ requests_finished_per_minute  │ 32    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 1.79s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 1.85s │
+└───────────────────────────────┴───────┘
+
+Found 20 repositories
+Added new snapshot for 2026-09-18
+Saved 20 repositories
+CSV now contains 112 records
+CSV file: github_trending.csv
+2026-09-18 09:30:08 [nodriver.core.browser] INFO terminated browser with pid 86950 successfully
+2026-09-18 09:30:08 [nodriver.core.browser] INFO terminated browser with pid 86950 successfully
+2026-09-18 09:30:08 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_zezw_mut
+
+======================================================================
+GitHub Trending scraper started: 2026-09-19T09:30:02
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-09-19
+
+2026-09-19 09:30:02 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_67jl7nb9
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=57205
+2026-09-19 09:30:04 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-09-19 09:30:04 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-09-19 09:30:04 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-09-19 09:30:04 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-19 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO Found 17 repository elements
+2026-09-19 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-09-19 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-09-19 09:30:07 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-09-19 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 3.06s │
+│ requests_finished_per_minute  │ 19    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 3.06s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 3.11s │
+└───────────────────────────────┴───────┘
+
+Found 17 repositories
+Added new snapshot for 2026-09-19
+Saved 17 repositories
+CSV now contains 129 records
+CSV file: github_trending.csv
+2026-09-19 09:30:07 [nodriver.core.browser] INFO terminated browser with pid 90517 successfully
+2026-09-19 09:30:07 [nodriver.core.browser] INFO terminated browser with pid 90517 successfully
+2026-09-19 09:30:07 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_67jl7nb9
+
+======================================================================
+GitHub Trending scraper started: 2026-09-20T09:32:06
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-09-20
+
+2026-09-20 09:32:07 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_8cl489l7
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=58010
+2026-09-20 09:32:11 [root] ERROR GitHub Trending scraper failed
+Traceback (most recent call last):
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 937, in main
+    uc.loop().run_until_complete(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        scrape(
+        ^^^^^^^
+            args.output
+            ^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/usr/local/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 726, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 681, in scrape
+    browser = await uc.start(
+              ^^^^^^^^^^^^^^^
+        headless=True,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/nodriver/core/util.py", line 103, in start
+    return await Browser.create(config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/nodriver/core/browser.py", line 95, in create
+    await instance.start()
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/nodriver/core/browser.py", line 382, in start
+    raise Exception(
+    ...<9 lines>...
+    )
+Exception: 
+                ---------------------
+                Failed to connect to browser
+                ---------------------
+                One of the causes could be when you are running as root.
+                In that case you need to pass no_sandbox=True 
+                
+2026-09-20 09:32:13 [nodriver.core.browser] INFO terminated browser with pid 37416 successfully
+2026-09-20 09:32:13 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_8cl489l7
+
+======================================================================
+GitHub Trending scraper started: 2026-09-21T09:30:03
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-09-21
+
+2026-09-21 09:30:03 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_6fsa_pfv
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=53323
+2026-09-21 09:30:05 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-09-21 09:30:05 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-09-21 09:30:05 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-09-21 09:30:05 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-21 09:30:08 [crawlee.crawlers._basic._basic_crawler] INFO Found 13 repository elements
+2026-09-21 09:30:08 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-09-21 09:30:08 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-09-21 09:30:08 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-09-21 09:30:08 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 2.67s │
+│ requests_finished_per_minute  │ 22    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 2.67s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 2.71s │
+└───────────────────────────────┴───────┘
+
+Found 13 repositories
+Added new snapshot for 2026-09-21
+Saved 13 repositories
+CSV now contains 142 records
+CSV file: github_trending.csv
+2026-09-21 09:30:08 [nodriver.core.browser] INFO terminated browser with pid 5281 successfully
+2026-09-21 09:30:08 [nodriver.core.browser] INFO terminated browser with pid 5281 successfully
+2026-09-21 09:30:08 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_6fsa_pfv
+
+======================================================================
+GitHub Trending scraper started: 2026-09-22T09:30:02
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-09-22
+
+2026-09-22 09:30:02 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_8h_fuucv
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=50555
+2026-09-22 09:30:05 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-09-22 09:30:05 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-09-22 09:30:05 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-09-22 09:30:05 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-22 09:30:08 [crawlee.crawlers._basic._basic_crawler] INFO Found 12 repository elements
+2026-09-22 09:30:08 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-09-22 09:30:08 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-09-22 09:30:08 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-09-22 09:30:08 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 3.87s │
+│ requests_finished_per_minute  │ 15    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 3.87s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 3.92s │
+└───────────────────────────────┴───────┘
+
+Found 12 repositories
+Added new snapshot for 2026-09-22
+Saved 12 repositories
+CSV now contains 154 records
+CSV file: github_trending.csv
+2026-09-22 09:30:09 [nodriver.core.browser] INFO terminated browser with pid 63436 successfully
+2026-09-22 09:30:09 [nodriver.core.browser] INFO terminated browser with pid 63436 successfully
+2026-09-22 09:30:09 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_8h_fuucv
+
+======================================================================
+GitHub Trending scraper started: 2026-09-23T09:30:03
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-09-23
+
+2026-09-23 09:30:03 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_mi55c0ge
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=63211
+2026-09-23 09:30:04 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-09-23 09:30:04 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-09-23 09:30:04 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-09-23 09:30:04 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-23 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO Found 8 repository elements
+2026-09-23 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-09-23 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-09-23 09:30:07 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-09-23 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 2.35s │
+│ requests_finished_per_minute  │ 25    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 2.35s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 2.41s │
+└───────────────────────────────┴───────┘
+
+Found 8 repositories
+Added new snapshot for 2026-09-23
+Saved 8 repositories
+CSV now contains 162 records
+CSV file: github_trending.csv
+2026-09-23 09:30:07 [nodriver.core.browser] INFO terminated browser with pid 71485 successfully
+2026-09-23 09:30:07 [nodriver.core.browser] INFO terminated browser with pid 71485 successfully
+2026-09-23 09:30:07 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_mi55c0ge
+
+======================================================================
+GitHub Trending scraper started: 2026-09-24T09:30:02
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-09-24
+
+2026-09-24 09:30:02 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_o_99fsjf
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=59518
+2026-09-24 09:30:04 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-09-24 09:30:04 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-09-24 09:30:04 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-09-24 09:30:04 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-24 09:30:08 [crawlee.crawlers._basic._basic_crawler] INFO Found 17 repository elements
+2026-09-24 09:30:08 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-09-24 09:30:08 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 4.01s │
+│ requests_finished_per_minute  │ 15    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 4.01s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 4.05s │
+└───────────────────────────────┴───────┘
+
+Found 17 repositories
+Added new snapshot for 2026-09-24
+Saved 17 repositories
+CSV now contains 179 records
+CSV file: github_trending.csv
+2026-09-24 09:30:08 [nodriver.core.browser] INFO terminated browser with pid 49418 successfully
+2026-09-24 09:30:08 [nodriver.core.browser] INFO terminated browser with pid 49418 successfully
+2026-09-24 09:30:08 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_o_99fsjf
+
+======================================================================
+GitHub Trending scraper started: 2026-09-25T09:30:04
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-09-25
+
+2026-09-25 09:30:04 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_12riync3
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=54482
+2026-09-25 09:30:06 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-09-25 09:30:06 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-09-25 09:30:06 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-09-25 09:30:06 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-25 09:30:09 [crawlee.crawlers._basic._basic_crawler] WARNING Retrying request to https://github.com/trending due to: Could not find node with given id [code: -32000]. File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/nodriver/core/connection.py", line 443, in send,     raise exception
+2026-09-25 09:30:16 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-09-25 09:30:17 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-25 09:30:18 [crawlee.crawlers._basic._basic_crawler] WARNING Retrying request to https://github.com/trending due to: Could not find node with given id [code: -32000]. File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/nodriver/core/connection.py", line 443, in send,     raise exception
+2026-09-25 09:30:18 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-25 09:30:18 [crawlee.crawlers._basic._basic_crawler] WARNING Retrying request to https://github.com/trending due to: Could not find node with given id [code: -32000]. File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/nodriver/core/connection.py", line 443, in send,     raise exception
+2026-09-25 09:30:18 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-25 09:30:20 [crawlee.crawlers._basic._basic_crawler] INFO Found 14 repository elements
+2026-09-25 09:30:20 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-09-25 09:30:20 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-09-25 09:30:20 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-09-25 09:30:20 [crawlee.crawlers._basic._basic_crawler] INFO Error analysis: total_errors=3 unique_errors=1
+2026-09-25 09:30:20 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬──────────────┐
+│ requests_finished             │ 1            │
+│ requests_failed               │ 0            │
+│ retry_histogram               │ [0, 0, 0, 1] │
+│ request_avg_failed_duration   │ None         │
+│ request_avg_finished_duration │ 2.04s        │
+│ requests_finished_per_minute  │ 4            │
+│ requests_failed_per_minute    │ 0            │
+│ request_total_duration        │ 2.04s        │
+│ requests_total                │ 1            │
+│ crawler_runtime               │ 14.00s       │
+└───────────────────────────────┴──────────────┘
+
+Found 14 repositories
+Added new snapshot for 2026-09-25
+Saved 14 repositories
+CSV now contains 193 records
+CSV file: github_trending.csv
+2026-09-25 09:30:20 [nodriver.core.browser] INFO terminated browser with pid 32987 successfully
+2026-09-25 09:30:20 [nodriver.core.browser] INFO terminated browser with pid 32987 successfully
+2026-09-25 09:30:21 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_12riync3
+
+======================================================================
+GitHub Trending scraper started: 2026-09-26T09:30:02
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-09-26
+
+2026-09-26 09:30:02 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_tf_qpe33
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=51591
+2026-09-26 09:30:03 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-09-26 09:30:03 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-09-26 09:30:03 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-09-26 09:30:03 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-26 09:30:06 [crawlee.crawlers._basic._basic_crawler] INFO Found 16 repository elements
+2026-09-26 09:30:06 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-09-26 09:30:06 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-09-26 09:30:06 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-09-26 09:30:06 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 2.93s │
+│ requests_finished_per_minute  │ 20    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 2.93s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 2.98s │
+└───────────────────────────────┴───────┘
+
+Found 16 repositories
+Added new snapshot for 2026-09-26
+Saved 16 repositories
+CSV now contains 209 records
+CSV file: github_trending.csv
+2026-09-26 09:30:06 [nodriver.core.browser] INFO terminated browser with pid 79120 successfully
+2026-09-26 09:30:06 [nodriver.core.browser] INFO terminated browser with pid 79120 successfully
+2026-09-26 09:30:06 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_tf_qpe33
+
+======================================================================
+GitHub Trending scraper started: 2026-09-27T09:30:03
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-09-27
+
+2026-09-27 09:30:03 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_kf_voz0i
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=64438
+2026-09-27 09:30:04 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-09-27 09:30:05 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-09-27 09:30:05 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-09-27 09:30:05 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-27 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO Found 15 repository elements
+2026-09-27 09:30:08 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-09-27 09:30:08 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-09-27 09:30:08 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-09-27 09:30:08 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 3.01s │
+│ requests_finished_per_minute  │ 20    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 3.01s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 3.07s │
+└───────────────────────────────┴───────┘
+
+Found 15 repositories
+Added new snapshot for 2026-09-27
+Saved 15 repositories
+CSV now contains 224 records
+CSV file: github_trending.csv
+2026-09-27 09:30:08 [nodriver.core.browser] INFO terminated browser with pid 12496 successfully
+2026-09-27 09:30:08 [nodriver.core.browser] INFO terminated browser with pid 12496 successfully
+2026-09-27 09:30:08 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_kf_voz0i
+
+======================================================================
+GitHub Trending scraper started: 2026-09-28T09:31:01
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-09-28
+
+2026-09-28 09:31:02 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_cs7i30jl
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=62794
+2026-09-28 09:31:05 [root] ERROR GitHub Trending scraper failed
+Traceback (most recent call last):
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 937, in main
+    uc.loop().run_until_complete(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        scrape(
+        ^^^^^^^
+            args.output
+            ^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/usr/local/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 726, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 681, in scrape
+    browser = await uc.start(
+              ^^^^^^^^^^^^^^^
+        headless=True,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/nodriver/core/util.py", line 103, in start
+    return await Browser.create(config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/nodriver/core/browser.py", line 95, in create
+    await instance.start()
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/nodriver/core/browser.py", line 382, in start
+    raise Exception(
+    ...<9 lines>...
+    )
+Exception: 
+                ---------------------
+                Failed to connect to browser
+                ---------------------
+                One of the causes could be when you are running as root.
+                In that case you need to pass no_sandbox=True 
+                
+2026-09-28 09:31:09 [nodriver.core.browser] INFO terminated browser with pid 7592 successfully
+2026-09-28 09:31:09 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_cs7i30jl
+
+======================================================================
+GitHub Trending scraper started: 2026-09-29T09:30:05
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-09-29
+
+2026-09-29 09:30:05 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_zn3i1rsg
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=61459
+2026-09-29 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-09-29 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-09-29 09:30:07 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-09-29 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-29 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO Found 8 repository elements
+2026-09-29 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-09-29 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-09-29 09:30:09 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-09-29 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 2.50s │
+│ requests_finished_per_minute  │ 23    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 2.50s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 2.56s │
+└───────────────────────────────┴───────┘
+
+Found 8 repositories
+Added new snapshot for 2026-09-29
+Saved 8 repositories
+CSV now contains 232 records
+CSV file: github_trending.csv
+2026-09-29 09:30:09 [nodriver.core.browser] INFO terminated browser with pid 69421 successfully
+2026-09-29 09:30:09 [nodriver.core.browser] INFO terminated browser with pid 69421 successfully
+2026-09-29 09:30:09 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_zn3i1rsg
+
+======================================================================
+GitHub Trending scraper started: 2026-09-30T09:30:05
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-09-30
+
+2026-09-30 09:30:05 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_jm3dcue2
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=59480
+2026-09-30 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-09-30 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-09-30 09:30:07 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-09-30 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-09-30 09:30:10 [crawlee.crawlers._basic._basic_crawler] INFO Found 14 repository elements
+2026-09-30 09:30:10 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-09-30 09:30:10 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-09-30 09:30:10 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-09-30 09:30:10 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 2.73s │
+│ requests_finished_per_minute  │ 21    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 2.73s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 2.80s │
+└───────────────────────────────┴───────┘
+
+Found 14 repositories
+Added new snapshot for 2026-09-30
+Saved 14 repositories
+CSV now contains 246 records
+CSV file: github_trending.csv
+2026-09-30 09:30:10 [nodriver.core.browser] INFO terminated browser with pid 5171 successfully
+2026-09-30 09:30:10 [nodriver.core.browser] INFO terminated browser with pid 5171 successfully
+2026-09-30 09:30:10 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_jm3dcue2
+
+======================================================================
+GitHub Trending scraper started: 2026-10-01T09:30:02
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-01
+
+2026-10-01 09:30:02 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_bhzmdgvk
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=49271
+2026-10-01 09:30:05 [root] ERROR GitHub Trending scraper failed
+Traceback (most recent call last):
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 937, in main
+    uc.loop().run_until_complete(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        scrape(
+        ^^^^^^^
+            args.output
+            ^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/usr/local/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 726, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 681, in scrape
+    browser = await uc.start(
+              ^^^^^^^^^^^^^^^
+        headless=True,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/nodriver/core/util.py", line 103, in start
+    return await Browser.create(config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/nodriver/core/browser.py", line 95, in create
+    await instance.start()
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/nodriver/core/browser.py", line 382, in start
+    raise Exception(
+    ...<9 lines>...
+    )
+Exception: 
+                ---------------------
+                Failed to connect to browser
+                ---------------------
+                One of the causes could be when you are running as root.
+                In that case you need to pass no_sandbox=True 
+                
+2026-10-01 09:30:06 [nodriver.core.browser] INFO terminated browser with pid 1646 successfully
+2026-10-01 09:30:06 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_bhzmdgvk
+
+======================================================================
+GitHub Trending scraper started: 2026-10-02T09:30:02
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-02
+
+2026-10-02 09:30:02 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_0wtphttk
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=49801
+2026-10-02 09:30:04 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-10-02 09:30:04 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-10-02 09:30:04 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-10-02 09:30:04 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-02 09:30:14 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-10-02 09:30:20 [crawlee.crawlers._basic._basic_crawler] WARNING Retrying request to https://github.com/trending due to: No repository elements found on GitHub Trending.. File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 735, in handler,     raise RuntimeError(,     ...<2 lines>...,     )
+2026-10-02 09:30:20 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-02 09:30:24 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-10-02 09:30:34 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-10-02 09:30:35 [crawlee.crawlers._basic._basic_crawler] WARNING Retrying request to https://github.com/trending due to: No repository elements found on GitHub Trending.. File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 735, in handler,     raise RuntimeError(,     ...<2 lines>...,     )
+2026-10-02 09:30:35 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-02 09:30:37 [crawlee.crawlers._basic._basic_crawler] INFO Found 15 repository elements
+2026-10-02 09:30:37 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-10-02 09:30:37 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-10-02 09:30:37 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-10-02 09:30:37 [crawlee.crawlers._basic._basic_crawler] INFO Error analysis: total_errors=2 unique_errors=1
+2026-10-02 09:30:37 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────────┐
+│ requests_finished             │ 1         │
+│ requests_failed               │ 0         │
+│ retry_histogram               │ [0, 0, 1] │
+│ request_avg_failed_duration   │ None      │
+│ request_avg_finished_duration │ 1.40s     │
+│ requests_finished_per_minute  │ 2         │
+│ requests_failed_per_minute    │ 0         │
+│ request_total_duration        │ 1.40s     │
+│ requests_total                │ 1         │
+│ crawler_runtime               │ 33.14s    │
+└───────────────────────────────┴───────────┘
+
+Found 15 repositories
+Added new snapshot for 2026-10-02
+Saved 15 repositories
+CSV now contains 261 records
+CSV file: github_trending.csv
+2026-10-02 09:30:37 [nodriver.core.browser] INFO terminated browser with pid 20622 successfully
+2026-10-02 09:30:37 [nodriver.core.browser] INFO terminated browser with pid 20622 successfully
+2026-10-02 09:30:37 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_0wtphttk
+
+======================================================================
+GitHub Trending scraper started: 2026-10-03T09:30:01
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-03
+
+2026-10-03 09:30:01 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_nbt4aa_b
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=50546
+2026-10-03 09:30:04 [nodriver.core.browser] INFO terminated browser with pid 3663 successfully
+2026-10-03 09:30:04 [root] ERROR GitHub Trending scraper failed
+OSError: [Errno 28] No space left on device
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 937, in main
+    uc.loop().run_until_complete(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        scrape(
+        ^^^^^^^
+            args.output
+            ^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/usr/local/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 726, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 837, in scrape
+    await crawler.run(
+        [URL]
+    )
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/crawlee/crawlers/_basic/_basic_crawler.py", line 735, in run
+    await self.add_requests(requests)
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/crawlee/crawlers/_basic/_basic_crawler.py", line 858, in add_requests
+    request_manager = await self.get_request_manager()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/crawlee/crawlers/_basic/_basic_crawler.py", line 620, in get_request_manager
+    self._request_manager = await RequestQueue.open(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/crawlee/storages/_request_queue.py", line 135, in open
+    return await service_locator.storage_instance_manager.open_storage_instance(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/crawlee/storages/_storage_instance_manager.py", line 170, in open_storage_instance
+    client = await client_opener_coro
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/crawlee/storage_clients/_file_system/_storage_client.py", line 80, in create_rq_client
+    client = await FileSystemRequestQueueClient.open(id=id, name=name, alias=alias, configuration=configuration)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/crawlee/storage_clients/_file_system/_request_queue_client.py", line 251, in open
+    await client._state.initialize()
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/crawlee/_utils/recoverable_state.py", line 108, in initialize
+    self._key_value_store = await self._persist_state_kvs_factory()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/crawlee/storage_clients/_file_system/_request_queue_client.py", line 142, in kvs_factory
+    return await KeyValueStore.open(storage_client=FileSystemStorageClient(), configuration=configuration)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/crawlee/storages/_key_value_store.py", line 130, in open
+    return await service_locator.storage_instance_manager.open_storage_instance(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/crawlee/storages/_storage_instance_manager.py", line 170, in open_storage_instance
+    client = await client_opener_coro
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/crawlee/storage_clients/_file_system/_storage_client.py", line 66, in create_kvs_client
+    client = await FileSystemKeyValueStoreClient.open(id=id, name=name, alias=alias, configuration=configuration)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/crawlee/storage_clients/_file_system/_key_value_store_client.py", line 181, in open
+    await client._update_metadata(update_accessed_at=True)
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/crawlee/storage_clients/_file_system/_key_value_store_client.py", line 484, in _update_metadata
+    await atomic_write(self.path_to_metadata, data)
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/crawlee/_utils/file.py", line 176, in atomic_write
+    await asyncio.to_thread(_write_file, path, data)
+  File "/usr/local/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/threads.py", line 26, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/python/lib/python3.13/site-packages/crawlee/_utils/file.py", line 56, in _write_file
+    with os.fdopen(fd, 'w', encoding='utf-8') as tmp_file:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 28] No space left on device
+2026-10-03 09:30:04 [nodriver.core.browser] INFO terminated browser with pid 3663 successfully
+2026-10-03 09:30:04 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_nbt4aa_b
+
+======================================================================
+GitHub Trending scraper started: 2026-10-14T09:31:11
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-14
+
+2026-10-14 09:31:11 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_rwrl0mwu
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=56000
+2026-10-14 09:31:15 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-10-14 09:31:15 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-10-14 09:31:15 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-10-14 09:31:15 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-14 09:31:21 [crawlee.crawlers._basic._basic_crawler] INFO Found 9 repository elements
+2026-10-14 09:31:21 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-10-14 09:31:21 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-10-14 09:31:21 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-10-14 09:31:21 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 6.03s │
+│ requests_finished_per_minute  │ 9     │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 6.03s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 6.34s │
+└───────────────────────────────┴───────┘
+
+Found 9 repositories
+Added new snapshot for 2026-10-14
+Saved 9 repositories
+CSV now contains 279 records
+CSV file: github_trending.csv
+2026-10-14 09:31:21 [nodriver.core.browser] INFO terminated browser with pid 8811 successfully
+2026-10-14 09:31:21 [nodriver.core.browser] INFO terminated browser with pid 8811 successfully
+2026-10-14 09:31:22 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_rwrl0mwu
+
+======================================================================
+GitHub Trending scraper started: 2026-10-15T09:34:15
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-15
+
+2026-10-15 09:34:16 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_x6u524dr
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=51852
+2026-10-15 09:34:26 [root] ERROR GitHub Trending scraper failed
+Traceback (most recent call last):
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 937, in main
+    uc.loop().run_until_complete(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        scrape(
+        ^^^^^^^
+            args.output
+            ^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/Users/Ralph.Goestenmeier/.local/share/uv/python/cpython-3.14-macos-x86_64-none/lib/python3.14/asyncio/base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 681, in scrape
+    browser = await uc.start(
+              ^^^^^^^^^^^^^^^
+        headless=True,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/util.py", line 103, in start
+    return await Browser.create(config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/browser.py", line 95, in create
+    await instance.start()
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/browser.py", line 382, in start
+    raise Exception(
+    ...<9 lines>...
+    )
+Exception: 
+                ---------------------
+                Failed to connect to browser
+                ---------------------
+                One of the causes could be when you are running as root.
+                In that case you need to pass no_sandbox=True 
+                
+2026-10-15 09:34:29 [nodriver.core.browser] INFO terminated browser with pid 22506 successfully
+2026-10-15 09:34:29 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_x6u524dr
+
+======================================================================
+GitHub Trending scraper started: 2026-10-16T09:44:40
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-16
+
+2026-10-16 09:44:50 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_6thgb7w0
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=53926
+2026-10-16 09:45:35 [root] ERROR GitHub Trending scraper failed
+Traceback (most recent call last):
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 937, in main
+    uc.loop().run_until_complete(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        scrape(
+        ^^^^^^^
+            args.output
+            ^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/Users/Ralph.Goestenmeier/.local/share/uv/python/cpython-3.14-macos-x86_64-none/lib/python3.14/asyncio/base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 681, in scrape
+    browser = await uc.start(
+              ^^^^^^^^^^^^^^^
+        headless=True,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/util.py", line 103, in start
+    return await Browser.create(config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/browser.py", line 95, in create
+    await instance.start()
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/browser.py", line 382, in start
+    raise Exception(
+    ...<9 lines>...
+    )
+Exception: 
+                ---------------------
+                Failed to connect to browser
+                ---------------------
+                One of the causes could be when you are running as root.
+                In that case you need to pass no_sandbox=True 
+                
+2026-10-16 09:45:36 [nodriver.core.browser] INFO terminated browser with pid 56594 successfully
+2026-10-16 09:45:36 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_6thgb7w0
+
+======================================================================
+GitHub Trending scraper started: 2026-10-16T10:08:17
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-16
+
+2026-10-16 10:08:17 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_iln218nv
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=55296
+2026-10-16 10:08:20 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-10-16 10:08:20 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-10-16 10:08:20 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-10-16 10:08:20 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-16 10:08:23 [crawlee.crawlers._basic._basic_crawler] WARNING Retrying request to https://github.com/trending due to: Could not find node with given id [code: -32000]. File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/connection.py", line 443, in send,     raise exception
+2026-10-16 10:08:23 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-16 10:08:24 [crawlee.crawlers._basic._basic_crawler] INFO Found 13 repository elements
+2026-10-16 10:08:24 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-10-16 10:08:24 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-10-16 10:08:24 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-10-16 10:08:24 [crawlee.crawlers._basic._basic_crawler] INFO Error analysis: total_errors=1 unique_errors=1
+2026-10-16 10:08:24 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬────────┐
+│ requests_finished             │ 1      │
+│ requests_failed               │ 0      │
+│ retry_histogram               │ [0, 1] │
+│ request_avg_failed_duration   │ None   │
+│ request_avg_finished_duration │ 1.75s  │
+│ requests_finished_per_minute  │ 13     │
+│ requests_failed_per_minute    │ 0      │
+│ request_total_duration        │ 1.75s  │
+│ requests_total                │ 1      │
+│ crawler_runtime               │ 4.78s  │
+└───────────────────────────────┴────────┘
+
+Found 13 repositories
+Added new snapshot for 2026-10-16
+Saved 13 repositories
+CSV now contains 292 records
+CSV file: github_trending.csv
+2026-10-16 10:08:24 [nodriver.core.browser] INFO terminated browser with pid 45122 successfully
+2026-10-16 10:08:24 [nodriver.core.browser] INFO terminated browser with pid 45122 successfully
+2026-10-16 10:08:25 [nodriver.core.util] INFO successfully removed temp profile /var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_iln218nv
+
+======================================================================
+GitHub Trending scraper started: 2026-10-16T10:08:52
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-16
+
+2026-10-16 10:08:52 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_b974ogip
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=55360
+2026-10-16 10:08:54 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-10-16 10:08:54 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-10-16 10:08:54 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-10-16 10:08:54 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-16 10:08:56 [crawlee.crawlers._basic._basic_crawler] WARNING Retrying request to https://github.com/trending due to: Could not find node with given id [code: -32000]. File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/connection.py", line 443, in send,     raise exception
+2026-10-16 10:08:56 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-16 10:08:57 [crawlee.crawlers._basic._basic_crawler] INFO Found 13 repository elements
+2026-10-16 10:08:57 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-10-16 10:08:57 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-10-16 10:08:57 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-10-16 10:08:57 [crawlee.crawlers._basic._basic_crawler] INFO Error analysis: total_errors=1 unique_errors=1
+2026-10-16 10:08:57 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬─────────┐
+│ requests_finished             │ 1       │
+│ requests_failed               │ 0       │
+│ retry_histogram               │ [0, 1]  │
+│ request_avg_failed_duration   │ None    │
+│ request_avg_finished_duration │ 883.9ms │
+│ requests_finished_per_minute  │ 23      │
+│ requests_failed_per_minute    │ 0       │
+│ request_total_duration        │ 883.9ms │
+│ requests_total                │ 1       │
+│ crawler_runtime               │ 2.57s   │
+└───────────────────────────────┴─────────┘
+
+Found 13 repositories
+Updated snapshot 2026-10-16 (13 previous rows replaced)
+Saved 13 repositories
+CSV now contains 292 records
+CSV file: github_trending.csv
+2026-10-16 10:08:57 [nodriver.core.browser] INFO terminated browser with pid 47476 successfully
+2026-10-16 10:08:57 [nodriver.core.browser] INFO terminated browser with pid 47476 successfully
+2026-10-16 10:08:57 [nodriver.core.util] INFO successfully removed temp profile /var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_b974ogip
+
+======================================================================
+GitHub Trending scraper started: 2026-10-16T10:10:23
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-16
+
+2026-10-16 10:10:23 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_6240u_vh
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=55474
+2026-10-16 10:10:25 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-10-16 10:10:25 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-10-16 10:10:25 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-10-16 10:10:25 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-16 10:10:28 [crawlee.crawlers._basic._basic_crawler] INFO Found 13 repository elements
+2026-10-16 10:10:28 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-10-16 10:10:28 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-10-16 10:10:28 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-10-16 10:10:28 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 3.19s │
+│ requests_finished_per_minute  │ 19    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 3.19s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 3.22s │
+└───────────────────────────────┴───────┘
+
+Found 13 repositories
+Added new snapshot for 2026-10-16
+Saved 13 repositories
+CSV now contains 13 records
+CSV file: github_trending.csv
+2026-10-16 10:10:28 [nodriver.core.browser] INFO terminated browser with pid 54547 successfully
+2026-10-16 10:10:28 [nodriver.core.browser] INFO terminated browser with pid 54547 successfully
+2026-10-16 10:10:28 [nodriver.core.util] INFO successfully removed temp profile /var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_6240u_vh
+
+======================================================================
+GitHub Trending scraper started: 2026-10-16T10:24:13
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-16
+
+2026-10-16 10:24:13 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_1v5b60ic
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=56358
+2026-10-16 10:24:16 [root] ERROR GitHub Trending scraper failed
+Traceback (most recent call last):
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 937, in main
+    uc.loop().run_until_complete(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        scrape(
+        ^^^^^^^
+            args.output
+            ^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/Users/Ralph.Goestenmeier/.local/share/uv/python/cpython-3.14-macos-x86_64-none/lib/python3.14/asyncio/base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 681, in scrape
+    browser = await uc.start(
+              ^^^^^^^^^^^^^^^
+        headless=True,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/util.py", line 103, in start
+    return await Browser.create(config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/browser.py", line 95, in create
+    await instance.start()
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/browser.py", line 382, in start
+    raise Exception(
+    ...<9 lines>...
+    )
+Exception: 
+                ---------------------
+                Failed to connect to browser
+                ---------------------
+                One of the causes could be when you are running as root.
+                In that case you need to pass no_sandbox=True 
+                
+2026-10-16 10:24:16 [nodriver.core.browser] INFO terminated browser with pid 69078 successfully
+2026-10-16 10:24:17 [nodriver.core.util] INFO successfully removed temp profile /var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_1v5b60ic
+
+======================================================================
+GitHub Trending scraper started: 2026-10-16T10:31:05
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-16
+
+2026-10-16 10:31:05 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_nomox6k8
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=56755
+2026-10-16 10:31:07 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-10-16 10:31:07 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-10-16 10:31:07 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-10-16 10:31:07 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-16 10:31:11 [crawlee.crawlers._basic._basic_crawler] INFO Found 13 repository elements
+2026-10-16 10:31:11 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-10-16 10:31:11 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-10-16 10:31:11 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-10-16 10:31:11 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 3.93s │
+│ requests_finished_per_minute  │ 15    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 3.93s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 4.05s │
+└───────────────────────────────┴───────┘
+
+Found 13 repositories
+Updated snapshot 2026-10-16 (13 previous rows replaced)
+Saved 13 repositories
+CSV now contains 292 records
+CSV file: github_trending.csv
+2026-10-16 10:31:11 [nodriver.core.browser] INFO terminated browser with pid 76745 successfully
+2026-10-16 10:31:11 [nodriver.core.browser] INFO terminated browser with pid 76745 successfully
+2026-10-16 10:31:11 [nodriver.core.util] INFO successfully removed temp profile /var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_nomox6k8
+
+======================================================================
+GitHub Trending scraper started: 2026-10-17T09:30:08
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-17
+
+2026-10-17 09:30:08 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_a3fr6wxc
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=56631
+2026-10-17 09:30:12 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-10-17 09:30:12 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-10-17 09:30:12 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-10-17 09:30:12 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-17 09:30:16 [crawlee.crawlers._basic._basic_crawler] INFO Found 13 repository elements
+2026-10-17 09:30:16 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-10-17 09:30:16 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-10-17 09:30:16 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-10-17 09:30:16 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 3.95s │
+│ requests_finished_per_minute  │ 15    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 3.95s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 4.03s │
+└───────────────────────────────┴───────┘
+
+Found 13 repositories
+Added new snapshot for 2026-10-17
+Saved 13 repositories
+CSV now contains 305 records
+CSV file: github_trending.csv
+2026-10-17 09:30:16 [nodriver.core.browser] INFO terminated browser with pid 52021 successfully
+2026-10-17 09:30:16 [nodriver.core.browser] INFO terminated browser with pid 52021 successfully
+2026-10-17 09:30:16 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_a3fr6wxc
+
+======================================================================
+GitHub Trending scraper started: 2026-10-18T09:30:02
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-18
+
+2026-10-18 09:30:02 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_kyk8nuti
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=64106
+2026-10-18 09:30:04 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-10-18 09:30:04 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-10-18 09:30:04 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-10-18 09:30:04 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-18 09:30:09 [crawlee.crawlers._basic._basic_crawler] WARNING Retrying request to https://github.com/trending due to: Could not find node with given id [code: -32000]. File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/connection.py", line 443, in send,     raise exception
+2026-10-18 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-18 09:30:11 [crawlee.crawlers._basic._basic_crawler] INFO Found 13 repository elements
+2026-10-18 09:30:11 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-10-18 09:30:11 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-10-18 09:30:11 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-10-18 09:30:11 [crawlee.crawlers._basic._basic_crawler] INFO Error analysis: total_errors=1 unique_errors=1
+2026-10-18 09:30:11 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬────────┐
+│ requests_finished             │ 1      │
+│ requests_failed               │ 0      │
+│ retry_histogram               │ [0, 1] │
+│ request_avg_failed_duration   │ None   │
+│ request_avg_finished_duration │ 2.10s  │
+│ requests_finished_per_minute  │ 9      │
+│ requests_failed_per_minute    │ 0      │
+│ request_total_duration        │ 2.10s  │
+│ requests_total                │ 1      │
+│ crawler_runtime               │ 6.73s  │
+└───────────────────────────────┴────────┘
+
+Found 13 repositories
+Added new snapshot for 2026-10-18
+Saved 13 repositories
+CSV now contains 318 records
+CSV file: github_trending.csv
+2026-10-18 09:30:11 [nodriver.core.browser] INFO terminated browser with pid 29166 successfully
+2026-10-18 09:30:11 [nodriver.core.browser] INFO terminated browser with pid 29166 successfully
+2026-10-18 09:30:11 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_kyk8nuti
+
+======================================================================
+GitHub Trending scraper started: 2026-10-19T09:30:04
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-19
+
+2026-10-19 09:30:04 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_89dyrr1n
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=62101
+2026-10-19 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-10-19 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-10-19 09:30:07 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-10-19 09:30:07 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-19 09:30:14 [crawlee.crawlers._basic._basic_crawler] INFO Found 13 repository elements
+2026-10-19 09:30:14 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-10-19 09:30:14 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-10-19 09:30:14 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-10-19 09:30:14 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 6.93s │
+│ requests_finished_per_minute  │ 9     │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 6.93s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 7.04s │
+└───────────────────────────────┴───────┘
+
+Found 13 repositories
+Added new snapshot for 2026-10-19
+Saved 13 repositories
+CSV now contains 331 records
+CSV file: github_trending.csv
+2026-10-19 09:30:14 [nodriver.core.browser] INFO terminated browser with pid 26673 successfully
+2026-10-19 09:30:14 [nodriver.core.browser] INFO terminated browser with pid 26673 successfully
+2026-10-19 09:30:15 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_89dyrr1n
+
+======================================================================
+GitHub Trending scraper started: 2026-10-20T09:30:02
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-20
+
+2026-10-20 09:30:02 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_w096kk44
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=62292
+2026-10-20 09:30:05 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-10-20 09:30:05 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-10-20 09:30:05 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-10-20 09:30:05 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-20 09:30:09 [crawlee.crawlers._basic._basic_crawler] WARNING Retrying request to https://github.com/trending due to: Could not find node with given id [code: -32000]. File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/connection.py", line 443, in send,     raise exception
+2026-10-20 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-20 09:30:11 [crawlee.crawlers._basic._basic_crawler] INFO Found 12 repository elements
+2026-10-20 09:30:11 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-10-20 09:30:11 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-10-20 09:30:11 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-10-20 09:30:11 [crawlee.crawlers._basic._basic_crawler] INFO Error analysis: total_errors=1 unique_errors=1
+2026-10-20 09:30:11 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬────────┐
+│ requests_finished             │ 1      │
+│ requests_failed               │ 0      │
+│ retry_histogram               │ [0, 1] │
+│ request_avg_failed_duration   │ None   │
+│ request_avg_finished_duration │ 2.22s  │
+│ requests_finished_per_minute  │ 9      │
+│ requests_failed_per_minute    │ 0      │
+│ request_total_duration        │ 2.22s  │
+│ requests_total                │ 1      │
+│ crawler_runtime               │ 6.40s  │
+└───────────────────────────────┴────────┘
+
+Found 12 repositories
+Added new snapshot for 2026-10-20
+Saved 12 repositories
+CSV now contains 343 records
+CSV file: github_trending.csv
+2026-10-20 09:30:11 [nodriver.core.browser] INFO terminated browser with pid 84412 successfully
+2026-10-20 09:30:11 [nodriver.core.browser] INFO terminated browser with pid 84412 successfully
+2026-10-20 09:30:12 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_w096kk44
+
+======================================================================
+GitHub Trending scraper started: 2026-10-21T09:30:25
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-21
+
+2026-10-21 09:30:25 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_8_hneppu
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=49925
+2026-10-21 09:30:30 [root] ERROR GitHub Trending scraper failed
+Traceback (most recent call last):
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 937, in main
+    uc.loop().run_until_complete(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        scrape(
+        ^^^^^^^
+            args.output
+            ^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/Users/Ralph.Goestenmeier/.local/share/uv/python/cpython-3.14-macos-x86_64-none/lib/python3.14/asyncio/base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 681, in scrape
+    browser = await uc.start(
+              ^^^^^^^^^^^^^^^
+        headless=True,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/util.py", line 103, in start
+    return await Browser.create(config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/browser.py", line 95, in create
+    await instance.start()
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/browser.py", line 382, in start
+    raise Exception(
+    ...<9 lines>...
+    )
+Exception: 
+                ---------------------
+                Failed to connect to browser
+                ---------------------
+                One of the causes could be when you are running as root.
+                In that case you need to pass no_sandbox=True 
+                
+2026-10-21 09:30:30 [nodriver.core.browser] INFO terminated browser with pid 27759 successfully
+2026-10-21 09:30:30 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_8_hneppu
+
+======================================================================
+GitHub Trending scraper started: 2026-10-22T09:30:08
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-22
+
+2026-10-22 09:30:08 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_gn4zjruc
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=57765
+2026-10-22 09:30:11 [root] ERROR GitHub Trending scraper failed
+Traceback (most recent call last):
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 937, in main
+    uc.loop().run_until_complete(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        scrape(
+        ^^^^^^^
+            args.output
+            ^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/Users/Ralph.Goestenmeier/.local/share/uv/python/cpython-3.14-macos-x86_64-none/lib/python3.14/asyncio/base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 681, in scrape
+    browser = await uc.start(
+              ^^^^^^^^^^^^^^^
+        headless=True,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/util.py", line 103, in start
+    return await Browser.create(config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/browser.py", line 95, in create
+    await instance.start()
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/browser.py", line 382, in start
+    raise Exception(
+    ...<9 lines>...
+    )
+Exception: 
+                ---------------------
+                Failed to connect to browser
+                ---------------------
+                One of the causes could be when you are running as root.
+                In that case you need to pass no_sandbox=True 
+                
+2026-10-22 09:30:11 [nodriver.core.browser] INFO terminated browser with pid 1458 successfully
+2026-10-22 09:30:11 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_gn4zjruc
+
+======================================================================
+GitHub Trending scraper started: 2026-10-23T09:30:04
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-23
+
+2026-10-23 09:30:04 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_dvsakw9z
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=59417
+2026-10-23 09:30:06 [root] ERROR GitHub Trending scraper failed
+Traceback (most recent call last):
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 937, in main
+    uc.loop().run_until_complete(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        scrape(
+        ^^^^^^^
+            args.output
+            ^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/Users/Ralph.Goestenmeier/.local/share/uv/python/cpython-3.14-macos-x86_64-none/lib/python3.14/asyncio/base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 681, in scrape
+    browser = await uc.start(
+              ^^^^^^^^^^^^^^^
+        headless=True,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/util.py", line 103, in start
+    return await Browser.create(config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/browser.py", line 95, in create
+    await instance.start()
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/browser.py", line 382, in start
+    raise Exception(
+    ...<9 lines>...
+    )
+Exception: 
+                ---------------------
+                Failed to connect to browser
+                ---------------------
+                One of the causes could be when you are running as root.
+                In that case you need to pass no_sandbox=True 
+                
+2026-10-23 09:30:07 [nodriver.core.browser] INFO terminated browser with pid 58434 successfully
+2026-10-23 09:30:07 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_dvsakw9z
+
+======================================================================
+GitHub Trending scraper started: 2026-10-24T09:30:11
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-24
+
+2026-10-24 09:30:11 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_4fr6xm8s
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=57174
+2026-10-24 09:30:14 [root] ERROR GitHub Trending scraper failed
+Traceback (most recent call last):
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 937, in main
+    uc.loop().run_until_complete(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        scrape(
+        ^^^^^^^
+            args.output
+            ^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/Users/Ralph.Goestenmeier/.local/share/uv/python/cpython-3.14-macos-x86_64-none/lib/python3.14/asyncio/base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 681, in scrape
+    browser = await uc.start(
+              ^^^^^^^^^^^^^^^
+        headless=True,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/util.py", line 103, in start
+    return await Browser.create(config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/browser.py", line 95, in create
+    await instance.start()
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/browser.py", line 382, in start
+    raise Exception(
+    ...<9 lines>...
+    )
+Exception: 
+                ---------------------
+                Failed to connect to browser
+                ---------------------
+                One of the causes could be when you are running as root.
+                In that case you need to pass no_sandbox=True 
+                
+2026-10-24 09:30:14 [nodriver.core.browser] INFO terminated browser with pid 62770 successfully
+2026-10-24 09:30:14 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_4fr6xm8s
+
+======================================================================
+GitHub Trending scraper started: 2026-10-25T09:30:02
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-25
+
+2026-10-25 09:30:02 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_78ynx6of
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=57704
+2026-10-25 09:30:05 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-10-25 09:30:05 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-10-25 09:30:05 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-10-25 09:30:05 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-25 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO Found 10 repository elements
+2026-10-25 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-10-25 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-10-25 09:30:09 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-10-25 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 3.58s │
+│ requests_finished_per_minute  │ 16    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 3.58s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 3.68s │
+└───────────────────────────────┴───────┘
+
+Found 10 repositories
+Added new snapshot for 2026-10-25
+Saved 10 repositories
+CSV now contains 367 records
+CSV file: github_trending.csv
+2026-10-25 09:30:09 [nodriver.core.browser] INFO terminated browser with pid 31605 successfully
+2026-10-25 09:30:09 [nodriver.core.browser] INFO terminated browser with pid 31605 successfully
+2026-10-25 09:30:09 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_78ynx6of
+
+======================================================================
+GitHub Trending scraper started: 2026-10-26T09:30:31
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-26
+
+2026-10-26 09:30:31 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_a99stcw1
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=58346
+2026-10-26 09:30:36 [root] ERROR GitHub Trending scraper failed
+Traceback (most recent call last):
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 937, in main
+    uc.loop().run_until_complete(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        scrape(
+        ^^^^^^^
+            args.output
+            ^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/Users/Ralph.Goestenmeier/.local/share/uv/python/cpython-3.14-macos-x86_64-none/lib/python3.14/asyncio/base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 681, in scrape
+    browser = await uc.start(
+              ^^^^^^^^^^^^^^^
+        headless=True,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/util.py", line 103, in start
+    return await Browser.create(config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/browser.py", line 95, in create
+    await instance.start()
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/browser.py", line 382, in start
+    raise Exception(
+    ...<9 lines>...
+    )
+Exception: 
+                ---------------------
+                Failed to connect to browser
+                ---------------------
+                One of the causes could be when you are running as root.
+                In that case you need to pass no_sandbox=True 
+                
+2026-10-26 09:30:38 [nodriver.core.browser] INFO terminated browser with pid 32664 successfully
+2026-10-26 09:30:38 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_a99stcw1
+
+======================================================================
+GitHub Trending scraper started: 2026-10-26T09:43:18
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-26
+
+2026-10-26 09:43:18 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_bldys5dp
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=58749
+2026-10-26 09:43:20 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-10-26 09:43:20 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-10-26 09:43:20 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-10-26 09:43:20 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-26 09:43:23 [crawlee.crawlers._basic._basic_crawler] INFO Found 11 repository elements
+2026-10-26 09:43:23 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-10-26 09:43:23 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-10-26 09:43:23 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-10-26 09:43:23 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 3.31s │
+│ requests_finished_per_minute  │ 18    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 3.31s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 3.39s │
+└───────────────────────────────┴───────┘
+
+Found 11 repositories
+Added new snapshot for 2026-10-26
+Saved 11 repositories
+CSV now contains 378 records
+CSV file: github_trending.csv
+2026-10-26 09:43:23 [nodriver.core.browser] INFO terminated browser with pid 48958 successfully
+2026-10-26 09:43:23 [nodriver.core.browser] INFO terminated browser with pid 48958 successfully
+2026-10-26 09:43:24 [nodriver.core.util] INFO successfully removed temp profile /var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_bldys5dp
+
+======================================================================
+GitHub Trending scraper started: 2026-10-27T09:30:59
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-27
+
+2026-10-27 09:30:59 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_wvte6iyy
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=57091
+2026-10-27 09:31:03 [root] ERROR GitHub Trending scraper failed
+Traceback (most recent call last):
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 937, in main
+    uc.loop().run_until_complete(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        scrape(
+        ^^^^^^^
+            args.output
+            ^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/Users/Ralph.Goestenmeier/.local/share/uv/python/cpython-3.14-macos-x86_64-none/lib/python3.14/asyncio/base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 681, in scrape
+    browser = await uc.start(
+              ^^^^^^^^^^^^^^^
+        headless=True,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/util.py", line 103, in start
+    return await Browser.create(config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/browser.py", line 95, in create
+    await instance.start()
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/browser.py", line 382, in start
+    raise Exception(
+    ...<9 lines>...
+    )
+Exception: 
+                ---------------------
+                Failed to connect to browser
+                ---------------------
+                One of the causes could be when you are running as root.
+                In that case you need to pass no_sandbox=True 
+                
+2026-10-27 09:31:03 [nodriver.core.browser] INFO terminated browser with pid 54521 successfully
+2026-10-27 09:31:03 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_wvte6iyy
+
+======================================================================
+GitHub Trending scraper started: 2026-10-27T09:37:54
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-27
+
+2026-10-27 09:37:54 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_uxrzbrrf
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=57210
+2026-10-27 09:37:56 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-10-27 09:37:56 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-10-27 09:37:56 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-10-27 09:37:56 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-27 09:38:06 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-10-27 09:38:07 [crawlee.crawlers._basic._basic_crawler] WARNING Retrying request to https://github.com/trending due to: Could not find node with given id [code: -32000]. File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/connection.py", line 443, in send,     raise exception
+2026-10-27 09:38:07 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-27 09:38:09 [crawlee.crawlers._basic._basic_crawler] INFO Found 14 repository elements
+2026-10-27 09:38:09 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-10-27 09:38:09 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-10-27 09:38:09 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-10-27 09:38:09 [crawlee.crawlers._basic._basic_crawler] INFO Error analysis: total_errors=1 unique_errors=1
+2026-10-27 09:38:09 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬────────┐
+│ requests_finished             │ 1      │
+│ requests_failed               │ 0      │
+│ retry_histogram               │ [0, 1] │
+│ request_avg_failed_duration   │ None   │
+│ request_avg_finished_duration │ 1.73s  │
+│ requests_finished_per_minute  │ 5      │
+│ requests_failed_per_minute    │ 0      │
+│ request_total_duration        │ 1.73s  │
+│ requests_total                │ 1      │
+│ crawler_runtime               │ 12.36s │
+└───────────────────────────────┴────────┘
+
+Found 14 repositories
+Added new snapshot for 2026-10-27
+Saved 14 repositories
+CSV now contains 392 records
+CSV file: github_trending.csv
+2026-10-27 09:38:09 [nodriver.core.browser] INFO terminated browser with pid 62910 successfully
+2026-10-27 09:38:09 [nodriver.core.browser] INFO terminated browser with pid 62910 successfully
+2026-10-27 09:38:09 [nodriver.core.util] INFO successfully removed temp profile /var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_uxrzbrrf
+
+======================================================================
+GitHub Trending scraper started: 2026-10-28T09:30:03
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-28
+
+2026-10-28 09:30:03 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_pvsbr8h4
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=56848
+2026-10-28 09:30:05 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-10-28 09:30:06 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-10-28 09:30:06 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-10-28 09:30:06 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-28 09:30:08 [crawlee.crawlers._basic._basic_crawler] WARNING Retrying request to https://github.com/trending due to: Could not find node with given id [code: -32000]. File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/connection.py", line 443, in send,     raise exception
+2026-10-28 09:30:08 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-28 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO Found 11 repository elements
+2026-10-28 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-10-28 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-10-28 09:30:09 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-10-28 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO Error analysis: total_errors=1 unique_errors=1
+2026-10-28 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬────────┐
+│ requests_finished             │ 1      │
+│ requests_failed               │ 0      │
+│ retry_histogram               │ [0, 1] │
+│ request_avg_failed_duration   │ None   │
+│ request_avg_finished_duration │ 1.22s  │
+│ requests_finished_per_minute  │ 17     │
+│ requests_failed_per_minute    │ 0      │
+│ request_total_duration        │ 1.22s  │
+│ requests_total                │ 1      │
+│ crawler_runtime               │ 3.52s  │
+└───────────────────────────────┴────────┘
+
+Found 11 repositories
+Added new snapshot for 2026-10-28
+Saved 11 repositories
+CSV now contains 403 records
+CSV file: github_trending.csv
+2026-10-28 09:30:09 [nodriver.core.browser] INFO terminated browser with pid 55385 successfully
+2026-10-28 09:30:09 [nodriver.core.browser] INFO terminated browser with pid 55385 successfully
+2026-10-28 09:30:09 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_pvsbr8h4
+
+======================================================================
+GitHub Trending scraper started: 2026-10-29T09:30:03
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-29
+
+2026-10-29 09:30:03 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_p8ghe8ei
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=62226
+2026-10-29 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-10-29 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-10-29 09:30:09 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-10-29 09:30:09 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-29 09:30:13 [crawlee.crawlers._basic._basic_crawler] INFO Found 14 repository elements
+2026-10-29 09:30:13 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-10-29 09:30:13 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-10-29 09:30:13 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-10-29 09:30:13 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 4.00s │
+│ requests_finished_per_minute  │ 15    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 4.00s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 4.04s │
+└───────────────────────────────┴───────┘
+
+Found 14 repositories
+Added new snapshot for 2026-10-29
+Saved 14 repositories
+CSV now contains 417 records
+CSV file: github_trending.csv
+2026-10-29 09:30:13 [nodriver.core.browser] INFO terminated browser with pid 88558 successfully
+2026-10-29 09:30:13 [nodriver.core.browser] INFO terminated browser with pid 88558 successfully
+2026-10-29 09:30:13 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_p8ghe8ei
+
+======================================================================
+GitHub Trending scraper started: 2026-10-30T09:30:02
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-30
+
+2026-10-30 09:30:02 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_2r1yxmni
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=61786
+2026-10-30 09:30:05 [root] ERROR GitHub Trending scraper failed
+Traceback (most recent call last):
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 937, in main
+    uc.loop().run_until_complete(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        scrape(
+        ^^^^^^^
+            args.output
+            ^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/Users/Ralph.Goestenmeier/.local/share/uv/python/cpython-3.14-macos-x86_64-none/lib/python3.14/asyncio/base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/./github_trending.py", line 681, in scrape
+    browser = await uc.start(
+              ^^^^^^^^^^^^^^^
+        headless=True,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/util.py", line 103, in start
+    return await Browser.create(config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/browser.py", line 95, in create
+    await instance.start()
+  File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/browser.py", line 382, in start
+    raise Exception(
+    ...<9 lines>...
+    )
+Exception: 
+                ---------------------
+                Failed to connect to browser
+                ---------------------
+                One of the causes could be when you are running as root.
+                In that case you need to pass no_sandbox=True 
+                
+2026-10-30 09:30:06 [nodriver.core.browser] INFO terminated browser with pid 43102 successfully
+2026-10-30 09:30:06 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_2r1yxmni
+
+======================================================================
+GitHub Trending scraper started: 2026-10-31T09:30:04
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-10-31
+
+2026-10-31 09:30:04 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/tmp/uc_l2doto5o
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=52487
+2026-10-31 09:30:06 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-10-31 09:30:06 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-10-31 09:30:06 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-10-31 09:30:06 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-10-31 09:30:10 [crawlee.crawlers._basic._basic_crawler] INFO Found 15 repository elements
+2026-10-31 09:30:10 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-10-31 09:30:10 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-10-31 09:30:10 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-10-31 09:30:10 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 4.00s │
+│ requests_finished_per_minute  │ 15    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 4.00s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 4.04s │
+└───────────────────────────────┴───────┘
+
+Found 15 repositories
+Added new snapshot for 2026-10-31
+Saved 15 repositories
+CSV now contains 432 records
+CSV file: github_trending.csv
+2026-10-31 09:30:10 [nodriver.core.browser] INFO terminated browser with pid 6248 successfully
+2026-10-31 09:30:10 [nodriver.core.browser] INFO terminated browser with pid 6248 successfully
+2026-10-31 09:30:10 [nodriver.core.util] INFO successfully removed temp profile /tmp/uc_l2doto5o
+
+======================================================================
+GitHub Trending scraper started: 2026-11-01T09:18:35
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-11-01
+
+2026-11-01 09:18:35 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_ku8dbt5g
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=51195
+2026-11-01 09:18:37 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-11-01 09:18:37 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-11-01 09:18:37 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-11-01 09:18:37 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-11-01 09:18:40 [crawlee.crawlers._basic._basic_crawler] INFO Found 14 repository elements
+2026-11-01 09:18:41 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-11-01 09:18:41 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-11-01 09:18:41 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-11-01 09:18:41 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬───────┐
+│ requests_finished             │ 1     │
+│ requests_failed               │ 0     │
+│ retry_histogram               │ [1]   │
+│ request_avg_failed_duration   │ None  │
+│ request_avg_finished_duration │ 3.62s │
+│ requests_finished_per_minute  │ 16    │
+│ requests_failed_per_minute    │ 0     │
+│ request_total_duration        │ 3.62s │
+│ requests_total                │ 1     │
+│ crawler_runtime               │ 3.67s │
+└───────────────────────────────┴───────┘
+
+Found 14 repositories
+Added new snapshot for 2026-11-01
+Saved 14 repositories
+CSV now contains 446 records
+CSV file: github_trending.csv
+2026-11-01 09:18:41 [nodriver.core.browser] INFO terminated browser with pid 36045 successfully
+2026-11-01 09:18:41 [nodriver.core.browser] INFO terminated browser with pid 36045 successfully
+2026-11-01 09:18:41 [nodriver.core.util] INFO successfully removed temp profile /var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_ku8dbt5g
+
+======================================================================
+GitHub Trending scraper started: 2026-11-01T09:18:56
+Output: github_trending.csv
+======================================================================
+
+Scraping GitHub Trending for 2026-11-01
+
+2026-11-01 09:18:56 [nodriver.core.browser] INFO starting
+	executable :/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=/var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_hlh2ug7f
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--headless=new
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=51243
+2026-11-01 09:18:57 [crawlee.crawlers._basic._basic_crawler] INFO Current request statistics:
+┌───────────────────────────────┬──────┐
+│ requests_finished             │ 0    │
+│ requests_failed               │ 0    │
+│ retry_histogram               │ [0]  │
+│ request_avg_failed_duration   │ None │
+│ request_avg_finished_duration │ None │
+│ requests_finished_per_minute  │ 0    │
+│ requests_failed_per_minute    │ 0    │
+│ request_total_duration        │ 0s   │
+│ requests_total                │ 0    │
+│ crawler_runtime               │ 0s   │
+└───────────────────────────────┴──────┘
+2026-11-01 09:18:57 [crawlee.crawlers._basic._basic_crawler] INFO Crawled 0/1 pages, 0 failed requests, desired concurrency 1.
+2026-11-01 09:18:57 [crawlee._autoscaling.autoscaled_pool] INFO current_concurrency = 0; desired_concurrency = 1; cpu = 0; mem = 0; event_loop = 0.0; client_info = 0.0
+2026-11-01 09:18:57 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-11-01 09:18:59 [crawlee.crawlers._basic._basic_crawler] WARNING Retrying request to https://github.com/trending due to: Could not find node with given id [code: -32000]. File "/Users/Shared/CLOUD/Projekte/WebScrape/github-trending/.venv/lib/python3.14/site-packages/nodriver/core/connection.py", line 443, in send,     raise exception
+2026-11-01 09:18:59 [crawlee.crawlers._basic._basic_crawler] INFO Opening https://github.com/trending
+2026-11-01 09:19:00 [crawlee.crawlers._basic._basic_crawler] INFO Found 14 repository elements
+2026-11-01 09:19:01 [crawlee.crawlers._basic._basic_crawler] INFO Crawler.stop() was called with following reason: The crawler has reached its limit of 1 requests per crawl. .
+2026-11-01 09:19:01 [crawlee.crawlers._basic._basic_crawler] INFO The crawler will finish any remaining ongoing requests and shut down.
+2026-11-01 09:19:01 [crawlee._autoscaling.autoscaled_pool] INFO Waiting for remaining tasks to finish
+2026-11-01 09:19:01 [crawlee.crawlers._basic._basic_crawler] INFO Error analysis: total_errors=1 unique_errors=1
+2026-11-01 09:19:01 [crawlee.crawlers._basic._basic_crawler] INFO Final request statistics:
+┌───────────────────────────────┬────────┐
+│ requests_finished             │ 1      │
+│ requests_failed               │ 0      │
+│ retry_histogram               │ [0, 1] │
+│ request_avg_failed_duration   │ None   │
+│ request_avg_finished_duration │ 1.77s  │
+│ requests_finished_per_minute  │ 18     │
+│ requests_failed_per_minute    │ 0      │
+│ request_total_duration        │ 1.77s  │
+│ requests_total                │ 1      │
+│ crawler_runtime               │ 3.31s  │
+└───────────────────────────────┴────────┘
+
+Found 14 repositories
+Updated snapshot 2026-11-01 (14 previous rows replaced)
+Saved 14 repositories
+CSV now contains 446 records
+CSV file: github_trending.csv
+2026-11-01 09:19:01 [nodriver.core.browser] INFO terminated browser with pid 36626 successfully
+2026-11-01 09:19:01 [nodriver.core.browser] INFO terminated browser with pid 36626 successfully
+2026-11-01 09:19:01 [nodriver.core.util] INFO successfully removed temp profile /var/folders/8d/t93gvp8s7ll9_821yx670bfw0000gv/T/uc_hlh2ug7f
