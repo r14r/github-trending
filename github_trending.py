@@ -39,7 +39,7 @@ CSV_FIELDS = [
     "link",
 ]
 
-STATUS_COLUMN_WIDTH = 48
+STATUS_COLUMN_WIDTH = 46
 
 
 class ProgressStep:
