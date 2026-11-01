@@ -1,3 +1,2 @@
-nodriver
-parsel
-crawlee
+requests
+pyyaml
