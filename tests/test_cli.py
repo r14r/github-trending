@@ -48,6 +48,28 @@ class OutputTests(unittest.TestCase):
         with patch.object(sys, "argv", ["github_trending.py", "--details"]):
             self.assertTrue(self.app.parse_args().details)
 
+    def test_step_statuses_are_aligned_and_failures_are_visible(self):
+        width = self.app.STATUS_COLUMN_WIDTH
+        label = "[1/3] Starting browser..."
+        output = io.StringIO()
+        with redirect_stdout(output):
+            with self.app.ProgressStep(label):
+                pass
+        self.assertEqual(output.getvalue(), f"{label:<{width}}OK\n")
+
+        output = io.StringIO()
+        with redirect_stdout(output):
+            with self.app.ProgressStep(label, details=True):
+                pass
+        self.assertEqual(output.getvalue(), f"{label}\n      OK\n")
+
+        output = io.StringIO()
+        with redirect_stdout(output):
+            with self.assertRaisesRegex(ValueError, "failed"):
+                with self.app.ProgressStep(label):
+                    raise ValueError("failed")
+        self.assertEqual(output.getvalue(), f"{label:<{width}}FAILED\n")
+
     def test_library_info_logs_only_appear_with_details(self):
         root = logging.getLogger()
         original_handlers = root.handlers[:]
@@ -156,10 +178,16 @@ class ScraperTests(unittest.IsolatedAsyncioTestCase):
             ):
                 await app.scrape(path)
             result = output.getvalue()
-            self.assertIn("[1/3] Starting browser", result)
-            self.assertIn("[2/3] Fetching trending repositories", result)
-            self.assertIn("[3/3] Updating CSV snapshot", result)
-            self.assertIn("Result: 1 saved", result)
+            width = app.STATUS_COLUMN_WIDTH
+            expected = (
+                f"{'[1/3] Starting browser...':<{width}}OK\n"
+                f"{'[2/3] Fetching trending repositories...':<{width}}"
+                "OK (1 repositories found)\n"
+                f"{'[3/3] Updating CSV snapshot...':<{width}}OK\n"
+                "\n"
+                f"{'Result:':<{width}}1 saved | 0 replaced | 1 total records\n"
+            )
+            self.assertEqual(result, expected)
             browser.stop.assert_called_once()
             with path.open(newline="", encoding="utf-8") as stream:
                 rows = list(csv.DictReader(stream))
