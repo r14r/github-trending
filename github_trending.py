@@ -61,6 +61,12 @@ def parse_args() -> argparse.Namespace:
     )
 
     parser.add_argument(
+        "--details",
+        action="store_true",
+        help="Show detailed nodriver and Crawlee diagnostic logs.",
+    )
+
+    parser.add_argument(
         "--silent",
         action="store_true",
         help=(
@@ -124,7 +130,10 @@ def configure_output(
     Configure process-wide stdout, stderr and logging.
 
     Normal:
-        terminal
+        terminal with concise progress and errors
+
+    --details:
+        terminal with library diagnostics
 
     --silent:
         /dev/null
@@ -179,7 +188,7 @@ def configure_output(
     # ------------------------------------------------------------------
 
     logging.basicConfig(
-        level=logging.INFO,
+        level=logging.INFO if args.details else logging.ERROR,
         format=(
             "%(asctime)s "
             "[%(name)s] "
@@ -237,7 +246,7 @@ def update_csv(
     filename: Path,
     repositories: list[dict[str, str]],
     scrape_date: str,
-) -> None:
+) -> tuple[int, int]:
     """
     Upsert one complete snapshot.
 
@@ -357,31 +366,7 @@ def update_csv(
             rows
         )
 
-    # ------------------------------------------------------------------
-    # Summary
-    # ------------------------------------------------------------------
-
-    if replaced_rows:
-        print(
-            f"Updated snapshot {scrape_date} "
-            f"({replaced_rows} previous rows replaced)"
-        )
-    else:
-        print(
-            f"Added new snapshot for {scrape_date}"
-        )
-
-    print(
-        f"Saved {len(current_rows)} repositories"
-    )
-
-    print(
-        f"CSV now contains {len(rows)} records"
-    )
-
-    print(
-        f"CSV file: {filename}"
-    )
+    return replaced_rows, len(rows)
 
 
 # ============================================================================
@@ -659,12 +644,7 @@ async def scrape(
         date.today().isoformat()
     )
 
-    print()
-    print(
-        f"Scraping GitHub Trending "
-        f"for {scrape_date}"
-    )
-    print()
+    print(f"GitHub Trending | {scrape_date}", flush=True)
 
     repositories: list[
         dict[str, str]
@@ -678,9 +658,11 @@ async def scrape(
         # Start Chromium through nodriver
         # ------------------------------------------------------------------
 
+        print("[1/3] Starting browser...", flush=True)
         browser = await uc.start(
             headless=True,
         )
+        print("      OK", flush=True)
 
         # ------------------------------------------------------------------
         # Crawlee
@@ -834,14 +816,9 @@ async def scrape(
         # Run crawler
         # ------------------------------------------------------------------
 
+        print("[2/3] Fetching trending repositories...", flush=True)
         await crawler.run(
             [URL]
-        )
-
-        print()
-
-        print(
-            f"Found {len(repositories)} repositories"
         )
 
         # ------------------------------------------------------------------
@@ -854,14 +831,24 @@ async def scrape(
                 "CSV was not modified."
             )
 
+        print(f"      OK - {len(repositories)} repositories found", flush=True)
+
         # ------------------------------------------------------------------
         # Update CSV
         # ------------------------------------------------------------------
 
-        update_csv(
+        print("[3/3] Updating CSV snapshot...", flush=True)
+        replaced_rows, total_rows = update_csv(
             output_file,
             repositories,
             scrape_date,
+        )
+        print("      OK", flush=True)
+        print(
+            f"Result: {len(repositories)} saved; "
+            f"{replaced_rows} previous rows replaced; "
+            f"{total_rows} total records in {output_file}",
+            flush=True,
         )
 
     finally:
@@ -945,10 +932,11 @@ def main() -> int:
     except KeyboardInterrupt:
         return 130
 
-    except Exception:
-        logging.exception(
-            "GitHub Trending scraper failed"
-        )
+    except Exception as exc:
+        if args.details:
+            logging.exception("GitHub Trending scraper failed")
+        else:
+            print(f"ERROR: {exc}", file=sys.stderr)
 
         return 1
 
