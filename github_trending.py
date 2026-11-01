@@ -851,7 +851,8 @@ async def scrape(
                     "No repositories were extracted. "
                     "CSV was not modified."
                 )
-            step.status = f"OK ({len(repositories)} repositories found)"
+            noun = "repository" if len(repositories) == 1 else "repositories"
+            step.status = f"OK ({len(repositories)} {noun} found)"
 
         # ------------------------------------------------------------------
         # Update CSV
