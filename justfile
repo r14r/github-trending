@@ -54,12 +54,12 @@ setup: install-dev
 
 # Run scraper
 run:
-    {{PYTHON}} {{SCRIPT}}
+    @{{PYTHON}} {{SCRIPT}}
 
 
 # Show browser and crawler diagnostics
 details:
-    {{PYTHON}} {{SCRIPT}} --details
+    @{{PYTHON}} {{SCRIPT}} --details
 
 
 # Silent run
