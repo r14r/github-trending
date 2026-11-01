@@ -28,3 +28,17 @@ In normal mode the program reports browser startup, scraping, CSV update, and
 a summary. Errors are printed without a traceback; use `--details` for
 diagnostics. The existing `--silent --log FILE` combination still writes to
 the logfile while keeping the terminal quiet.
+
+## Example: normal output
+
+```text
+[1/3] Starting browser...                     OK
+[2/3] Fetching trending repositories...       OK (14 repositories found)
+[3/3] Updating CSV snapshot...                OK
+
+Result:                                       14 saved | 14 replaced | 446 total records
+```
+
+Step labels and the final result are padded to a fixed-width column.
+Progress appears as each step starts; failures are marked `FAILED`.
+With `--details`, stage messages and library diagnostics occupy separate lines.
