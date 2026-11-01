@@ -75,14 +75,14 @@ class OutputTests(unittest.TestCase):
         with redirect_stdout(output):
             with self.app.ProgressStep(label):
                 pass
-        self.assertEqual(output.getvalue(), f"{label:<{width}}OK\\n")
+        self.assertEqual(output.getvalue(), f"{label:<{width}}OK\n")
 
         output = io.StringIO()
         with redirect_stdout(output):
             with self.assertRaisesRegex(ValueError, "failed"):
                 with self.app.ProgressStep(label):
                     raise ValueError("failed")
-        self.assertEqual(output.getvalue(), f"{label:<{width}}FAILED\\n")
+        self.assertEqual(output.getvalue(), f"{label:<{width}}FAILED\n")
 
     def test_info_logs_only_with_details(self):
         root = logging.getLogger()
