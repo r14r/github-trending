@@ -182,7 +182,7 @@ class ScraperTests(unittest.IsolatedAsyncioTestCase):
             expected = (
                 f"{'[1/3] Starting browser...':<{width}}OK\n"
                 f"{'[2/3] Fetching trending repositories...':<{width}}"
-                "OK (1 repositories found)\n"
+                "OK (1 repository found)\n"
                 f"{'[3/3] Updating CSV snapshot...':<{width}}OK\n"
                 "\n"
                 f"{'Result:':<{width}}1 saved | 0 replaced | 1 total records\n"
